@@ -9,6 +9,7 @@ $font-path: "fonts";
 // $font-open-sans: 'Open Sans', Helvetica, Arial, sans-serif;
 
 // $font-name: $font-roboto;
+$font-spline-sans: 'Spline Sans', sans-serif;
 
 //## Custom Overwrides
 
@@ -19,10 +20,29 @@ $font-path: "fonts";
 
 // Color system
 
+$dark-blue: #002c5d;
+$dark-blue-1: #24456a;
+$dark-blue-2: #07376d;
+$dark-blue-3: #021c3a;
+$dark-blue-4: #1f4065;
+
+$dark-pink: #131112;
+
+$strong-cyan: #02c9b8;
+
+$moderate-blue: #436385;
+
+$vivid-red: #e54312;
+
+$dark-gray-1: #333333;
+$dark-gray-2: #666666;
+$dark-gray-3: #5b5b5b;
+$dark-gray-4: #a2a2a2;
+
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
+$gray-100: #f9f9f9;
+$gray-200: #e5e5e5;
+$gray-300: #efefef;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
@@ -78,7 +98,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $dark-blue;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -152,11 +172,15 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9)
   ),
   $spacers
 );
@@ -211,8 +235,9 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px
-) !default;
+  xl: 1200px,
+  xl: 1440px
+);
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
@@ -226,8 +251,9 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
-) !default;
+  xl: 1140px,
+  xxl: 1310px
+);
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -290,7 +316,7 @@ $embed-responsive-aspect-ratios: join(
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+$font-family-base:            'Spline Sans', sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
