@@ -12534,6 +12534,7 @@ textarea.form-control {
   color: #fff;
   font-weight: 600;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
@@ -12607,6 +12608,31 @@ textarea.form-control {
   .banner-inner__content {
     min-height: 350px;
   }
+}
+
+.banner-inner .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  justify-content: center;
+}
+
+.banner-inner .breadcrumb-item::before {
+  color: #fff;
+}
+
+.banner-inner .breadcrumb-item a {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.banner-inner .breadcrumb-item a:focus, .banner-inner .breadcrumb-item a:hover {
+  text-decoration: none;
+}
+
+.banner-inner .breadcrumb-item.active a {
+  color: #02c9b8;
 }
 
 .overlay-bg {

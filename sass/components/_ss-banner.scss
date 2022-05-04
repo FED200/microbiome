@@ -26,6 +26,7 @@
             color: $white;
             font-weight: 600;
             @include font-size(2rem);
+            margin-bottom: 0;
     
             @include media-breakpoint-up(md) {
                 @include font-size(2.5rem);
@@ -62,8 +63,36 @@
             
         }
 
-        .breadcrumb{
-            
+        .breadcrumb {
+            background-color: transparent;
+            padding: 0;
+            justify-content: center;
+
+            &-item {
+                &::before{
+                    color: $white;
+                }
+
+                a {
+                    color: $white;
+                    @include font-size(0.875rem);
+                    font-weight: 400;
+                    text-transform: capitalize;
+
+                    &:focus,
+                    &:hover {
+                        text-decoration: none;
+                        // color: $red;
+                    }
+                }
+
+                &.active {
+                    
+                    a{
+                        color: $strong-cyan;
+                    }                 
+                }
+            }
         }
     }
 }
