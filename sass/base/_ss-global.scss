@@ -68,3 +68,11 @@ iframe {
 	width: 100%;
 	height: 100%;
 }
+
+.no-gutters {
+	margin: auto 0;
+
+	[class*="col-"] {
+		padding: auto 0;
+	}
+}

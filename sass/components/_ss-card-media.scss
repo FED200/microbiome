@@ -1,0 +1,21 @@
+.card {
+    &-media {
+        position: relative;
+
+        &__img {
+            position: relative;
+        }
+
+        &__title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($primary, 0.79);
+            color: $white;
+            text-align: center;
+            height: 61px;
+            padding: 10px 0;
+        }
+    }
+}

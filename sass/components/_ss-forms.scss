@@ -1,0 +1,37 @@
+.form {
+    &-block {
+        background: transparent linear-gradient(180deg, #002C5D 0%, #021C3A 100%) 0% 0% no-repeat padding-box;
+        padding: 78px 40px 100px 105px;
+
+        
+    }
+
+    &-group {
+        margin-bottom: 24px;
+        
+        label {
+            color: $white;
+            @include font-size(1rem);
+            font-weight: 300;
+        }
+    }
+
+    &-control {
+        border: 1px solid $dark-blue-4;
+        height: 60px;
+        padding: 22px 20px;
+        border-radius: 5px;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $dark-blue-1;
+            @include font-size(0.875rem);
+        }
+    }
+}
+
+textarea.form-control {
+    height: 120px;
+    min-height: 120px;
+    resize: none;
+}
