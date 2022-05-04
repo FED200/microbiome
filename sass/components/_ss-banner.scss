@@ -1,0 +1,62 @@
+//banner
+.banner {
+    &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+
+        @include media-breakpoint-up(md) {
+            min-height: 400px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 500px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 594px;
+        }
+    }
+
+    &-info{
+        max-width: 843px;
+
+        h1 {
+            color: $white;
+            font-weight: 600;
+            @include font-size(2rem);
+    
+            @include media-breakpoint-up(md) {
+                @include font-size(2.5rem);
+            }
+    
+            @include media-breakpoint-up(lg) {
+                @include font-size(3.5rem);
+            }
+    
+            @include media-breakpoint-up(xl) {
+                @include font-size(4rem);
+            }
+    
+            @include media-breakpoint-up(xxl) {
+                @include font-size(4.5rem);
+            }
+        }       
+    }
+}
+
+.overlay-bg{
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($dark-blue,0.75);
+        z-index: -1;
+    }
+}

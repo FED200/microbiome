@@ -1,0 +1,92 @@
+//banner
+.banner {
+    &-slider {
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 45px;
+        }
+
+        &__item {}
+
+        .slick {
+            &-arrow {
+                font-size: 0;
+                line-height: 1;
+                border: 0;
+                background-color: $white;
+                width: 35px;
+                height: 35px;
+                border-radius: 6px;
+                position: absolute;
+                bottom: 0;
+                z-index: 5;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+
+                @include media-breakpoint-down(lg) {
+                    margin-right: 0.5rem;
+                }
+
+                &:focus,
+                &:hover {
+                    outline: 0;
+                }
+
+                &:before {
+                    content: ' ';
+                    font-family: 'icomoon';
+                    @include font-size(1rem);
+                    color: $strong-cyan;
+                    // color: $soft-red-1;
+
+                }
+            }
+
+            &-prev {
+                left: auto;
+                right: 50.4%;
+
+                @include media-breakpoint-up(lg) {
+                    right: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    right: 100px;
+                }
+
+
+                &:before {
+                    content: '\e911';
+                }
+            }
+
+            &-next {
+                right: auto;
+                left: 50.4%;
+
+                @include media-breakpoint-up(lg) {
+                    left: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    left: 100px;
+                }
+
+                &:before {
+                    content: '\e911';
+                }
+            }
+
+            &-track {
+                display: flex;
+            }
+
+            &-slide {
+                height: inherit;
+            }
+        }
+    }
+}

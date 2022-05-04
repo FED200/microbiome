@@ -27,7 +27,7 @@
 
     [class*='icon-'] {
         position: relative;
-        top: -1px;
+        top: 0;
         line-height: 1;
         padding-right: 0.4rem;
         @include font-size(0.75rem);
@@ -71,7 +71,6 @@
     &.btn-secondary {
         background-color: $strong-cyan;
         color: $dark-blue;
-        border-color: $dark-blue;
         padding: 0.6438rem 1rem;
 
         @include media-breakpoint-up(md) {
@@ -92,7 +91,7 @@
         &:hover {
             background-color: $white;
             color: $dark-blue;
-            border-color: $dark-blue;
+            border-color: transparent;
         }
 
         &--md {

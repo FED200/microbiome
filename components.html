@@ -9,31 +9,83 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
+		<link rel="stylesheet" href="vendors/slick/slick.css">
 	<link rel="stylesheet" href="style.css">
 	<title>Components</title>
 </head>
 
 <body>
 	<div class="site-wrapper">
-		<header id="header" class="site-header pb-3">
-			<nav class="site-nav">
+		<header id="header" class="site-header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" width="154" height="154"
+							loading="lazy" alt="Header Logo"></a>
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 
-			</nav> <!-- / .site-nav -->
-
-			<div class="phone-number">
-				<a href="tel:"></a>
-			</div> <!-- / .phone-number -->
-
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">store</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">learn</a>
+							</li>
+						</ul>
+						<div class="btn-wrap">
+							<button class="btn btn-secondary mr-lg-1" type="submit"><i
+									class="icon-heart-shape"></i>Request a
+								consultation</button>
+							<button class="btn btn-sm" type="submit">Patient login</button>
+						</div>
+					</div>
+				</nav> <!-- / .site-nav -->
+			</div>
 		</header> <!-- / .site-header -->
 
 		<main id="main" class="site-content">
-			<div class="container">
-				<hr>
-				<hr>
-				<h2><em>.banner-title</em></h2>
-				<div class="banner-title text-center">
-					<h1>A Healthy Life Begins With a Healthy GUT</h1>
-				</div><!-- / .banner-title -->
+			<section class="banner banner-slider">
+				<div class="banner-slider__item">
+					<div class="banner-content bg-cover overlay-bg">
+						<img src="assets/images/banner-bg.jpg" width="1440" height="594" loading="lazy" alt="Banner Bg">
+						<div class="banner-info text-center">
+							<h1>A Healthy Life Begins With a Healthy GUT</h1>
+							<div class="btn-wrap mt-lg-2 mt-1">
+								<a href="#" class="btn btn-secondary">Learn more</a>
+							</div>
+							<a href="#" class=""><i class="icon-play"></i></a>
+						</div><!-- / .banner-info -->					
+					</div>
+				</div>
+				<div class="banner-slider__item">
+					<div class="banner-content bg-cover overlay-bg">
+						<img src="assets/images/banner-bg.jpg" width="1440" height="594" loading="lazy" alt="Banner Bg">
+						<div class="banner-info text-center">
+							<h1>A Healthy Life Begins With a Healthy GUT</h1>
+							<div class="btn-wrap mt-lg-2 mt-1">
+								<a href="#" class="btn btn-secondary">Learn more</a>
+							</div>
+							<a href="#" class=""><i class="icon-play"></i></a>
+						</div><!-- / .banner-info -->					
+					</div>
+				</div>
+			</section>
+			<div class="container">				
 				<hr>
 				<hr>
 				<h2><em>.buttons</em></h2>
@@ -245,6 +297,13 @@
 
 
 	<script src="assets/js/jquery.min.js"></script>
+	<script src="vendors/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+	</script>
 	<script src="assets/js/main.js"></script>
 </body>
 
