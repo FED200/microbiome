@@ -73,3 +73,38 @@ ol {
 		font-weight: $i * 100;
 	}
 }
+
+.dark-overlay {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient($dark-blue 0%, $dark-blue-3 100%);
+		opacity: 0.8;
+		z-index: -1;
+	}
+}
+
+.blue-overlay {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 4px;
+		background: linear-gradient(#054fa1 0%, #013f87 100%);
+		opacity: 0.9;
+		z-index: -1;
+	}
+}

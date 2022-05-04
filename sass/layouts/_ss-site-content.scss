@@ -1,0 +1,8 @@
+.faq {
+    .container {
+
+        @include media-breakpoint-up(lg) {
+            max-width: 848px;
+        }
+    }
+}

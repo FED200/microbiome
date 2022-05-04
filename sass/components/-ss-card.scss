@@ -1,0 +1,51 @@
+.card {
+    &-services {
+        display: flex;
+        align-items: center;
+        min-height: 380px;
+        height: 100%;
+        justify-content: centers;
+
+        &__media {
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        &__desc {
+            color: $white;
+            @include font-size(.875rem);
+
+            @include media-breakpoint-up(lg) {
+                padding-left: .6875rem;
+                padding-right: 1.375rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+
+            .btn-wrap a {
+                color: $white;
+                overflow: hidden;
+                transition: all .3s;
+
+                i {
+                    margin-left: .5rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &--image {
+            padding-left: 1.125rem;
+            padding-right: .6875rem;
+
+        }
+
+        &--content {
+            flex-direction: column;
+        }
+
+    }
+}

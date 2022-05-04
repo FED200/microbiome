@@ -13,6 +13,15 @@ $(document).ready(function () {
 
     initBgCover();
 
+    //Accordion
+    $('[data-toggle-btn]').click(function () {
+        $('[data-toggle-btn]').not(this).parent().removeClass('active');
+        $(this).parent().toggleClass('active');
+        $('[data-toggle-btn]').not(this).siblings('[data-toggle-block]').slideUp();
+        $(this).siblings('[data-toggle-block]').slideToggle();
+    });
+
+
     /* smooth scroll*/
     $('a.js-has-smooth[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
