@@ -55,16 +55,20 @@
 				<div class="row">
 					<div class="col-lg-3">
 						<div class="card-media">
-							<picture class="card-media__img">
-								<source srcset="assets/images/wendys.webp" type="image/webp">
-								<source srcset="assets/images/wendys.png" type="image/png">
-								<img src="assets/images/wendys.png" width="223" height="149" loading="lazy"
-									alt="Wendys logo">
-							</picture>
-							<div class="card-media__title">
-								<h3>Story 1</h3>
+							<div class="card-media__img">
+								<picture>
+									<source srcset="assets/images/story01.webp" type="image/webp">
+									<source srcset="assets/images/story01.jpg" type="image/jpg">
+									<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy" alt="Story image">
+								</picture>
+								<div class="card-media__title">
+									<h3>Story 1</h3>
+								</div>
+							</div> <!-- / .card-img -->
+							<div class="btn-wrap">
+								<a href="#">Learn more</a>
 							</div>
-						</div>
+						</div> <!-- / .card-media -->
 					</div>
 				</div>
 			</div>
@@ -97,10 +101,143 @@
 			<hr>
 			<hr>
 
+			<section class="form-wrap">
+				<div class="container">
+					<div class="row no-gutters">
+						<div class="col-lg-6">
+							<div class="form-block">
+								<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
+									<div class="form-header">
+									</div>
+	
+									<div class="form-section-0">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="">Name*</label>
+													<input class="form-control" placeholder="Enter your name here... " name="first-name" type="text" value="">
+													<div class="messages"></div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="">Email*</label>
+													<input class="form-control" placeholder="Email address here..." name="email" type="email" value="">
+													<div class="messages"></div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="">Phone number</label>
+													<input class="form-control" placeholder="Enter your contact number" name="phone-number" type="text" value="">
+													<div class="messages"></div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label for="">Location</label>
+													<input class="form-control" placeholder="What program are you interested in" name="last-name" type="text" value="">
+													<div class="messages"></div>
+												</div>
+											</div>
+										</div>										
+										<div class="form-group">
+											<label for="">Message</label>
+											<textarea class="form-control" placeholder="Your message..." name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+											<div class="messages"></div>
+										</div>
+									</div>
+									<div class="form-footer mt-xl-2 mt-1"> 
+										<button type="submit" class="submitButton btn btn-primary btn-primary--md">
+											Submit Form
+										</button>
+									</div>
+								</form>
+							</div> <!-- / .form-block -->
+						</div>
+						<div class="col-lg-6">
+							<picture>
+								<source srcset="assets/images/map.webp" type="image/webp">
+								<source srcset="assets/images/map.jpg" type="image/jpg">
+								<img src="assets/images/map.jpg" width="631" height="707" loading="lazy" alt="Map image">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section> <!-- / .form-wrap -->
+
 		</main> <!-- / .site-content -->
 
-		<footer id="footer" class="site-footer">
-
+		<footer id="footer" class="site-footer pt-6">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 mb-lg-0 mb-1">
+						<div class="footer-item social-icon text-sm-left text-center">
+							<picture class="mb-md-2 mb-1">
+								<source srcset="assets/images/revolution-gut-health-logo.webp" type="image/webp">
+								<source srcset="assets/images/revolution-gut-health-logo.png" type="image/png">
+								<img src="assets/images/revolution-gut-health-logo.png" width="145" height="146" loading="lazy" alt="Footer logo">
+							</picture>
+							<p>You're not alone in this - you can reclaim your vitality.</p>
+							<ul class="list mt-md-2 mt-1 d-flex justify-content-sm-start justify-content-center">
+								<li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+								<li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+								<li><a href="#" target="_blank"><i class="icon-lnkedin"></i></a></li>
+								<li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div> <!-- / .footer-item -->
+					</div>
+					<div class="col-lg-2 col-sm-6 mb-lg-0 mb-1">
+						<div class="footer-item text-sm-left text-center">
+							<h5>Quick Links</h5>
+							<ul class="list">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Affiliations</a></li>
+								<li><a href="#">Products</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Microbiome</a></li>
+								<li><a href="#">Labs</a></li>
+								<li><a href="#">Agreements</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div> <!-- / .footer-item -->
+					</div>
+					<div class="col-lg-4 col-sm-6 mb-sm-0 mb-1">
+						<div class="footer-item footer-product text-sm-left text-center">
+							<h5>Products</h5>
+							<ul class="list">
+								<li><a href="#">MegaViron</a></li>
+								<li><a href="#">MegaMune</a></li>
+								<li><a href="#">MegaCidin</a></li>
+								<li><a href="#">BiomeFX</a></li>
+								<li><a href="#">WheatRescue</a></li>
+								<li><a href="#">MegaSporeBiotic</a></li>
+								<li><a href="#">MegaPre</a></li>
+								<li><a href="#">MegaMucosa</a></li>
+								<li><a href="#">MegaViron</a></li>
+								<li><a href="#">MegaMune</a></li>
+								<li><a href="#">MegaCidin</a></li>
+								<li><a href="#">BiomeFX</a></li>
+								<li><a href="#">WheatRescue</a></li>
+								<li><a href="#">MegaSporeBiotic</a></li>
+								<li><a href="#">MegaPre</a></li>
+								<li><a href="#">MegaMucosa</a></li>
+							</ul>
+						</div> <!-- / .footer-item -->
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-item footer-contact text-sm-left text-center">
+							<h5>Contact Us</h5>
+							<ul class="list">
+								<li><a href="#" target="_blank"><i class="icon-location"></i>23345 N 23rd Ave, #100, Phoenix, AZ 85027</a></li>
+								<li><a href="tel:9049402208" target="_blank"><i class="icon-call"></i>9049402208</a></li>
+								<li><a href="mailto:info@microbiomelabs.com" target="_blank"><i class="icon-email"></i>info@microbiomelabs.com</a></li>
+							</ul>
+						</div> <!-- / .footer-item -->
+					</div>
+				</div>
+			</div>
+			<span class="copyright text-center py-1 mt-xl-3 mt-sm-2 mt-1">Copyright &copy; Revolution GUT Health. All rights reserved.</span>
 		</footer> <!-- / .site-footer -->
 
 	</div>
