@@ -1,0 +1,190 @@
+.btn {
+    @include font-size(0.875rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border-radius: 2px;
+    line-height: 1;
+    transition: all 0.3s;
+    min-width: auto;
+    padding: 0.6438rem 1rem;
+
+    @include media-breakpoint-up(md) {
+        min-width: 150px;
+        padding: 0.7438rem 1.5625rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-width: 160px;
+        padding: 0.9438rem 1.875rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-width: 168px;
+        padding: 1.0625rem 2.375rem;
+    }
+
+    [class*='icon-'] {
+        position: relative;
+        top: -1px;
+        line-height: 1;
+        padding-right: 0.4rem;
+        @include font-size(0.75rem);
+    }
+
+    &.btn-primary {
+        color: $white;
+        background-color: $dark-blue;
+
+        &:hover {
+            background-color: $white;
+            color: $dark-blue;
+            border-color: $dark-blue;
+        }
+
+        &--alt {
+            background-color: $white;
+            color: $dark-blue;
+            border-color: $dark-blue;
+
+            &:hover {
+                background-color: $dark-blue;
+                color: $white;
+                border-color: $dark-blue;
+            }
+        }
+
+        &--cyan {
+            background-color: $strong-cyan;
+            color: $dark-blue;
+            border-color: $dark-blue;
+
+            &:hover {
+                background-color: $white;
+                color: $dark-blue;
+                border-color: $dark-blue;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $strong-cyan;
+        color: $dark-blue;
+        border-color: $dark-blue;
+        padding: 0.6438rem 1rem;
+
+        @include media-breakpoint-up(md) {
+            min-width: 155px;
+            padding: 0.7438rem 1.25rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-width: 165px;
+            padding: 0.9438rem 1.375rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 172px;
+            padding: 1.0625rem 1.5rem;
+        }
+
+        &:hover {
+            background-color: $white;
+            color: $dark-blue;
+            border-color: $dark-blue;
+        }
+
+        &--md {
+            @include media-breakpoint-up(md) {
+                min-width: 160px;
+                padding: 0.7438rem 1.25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                min-width: 170px;
+                padding: 0.9438rem 1.375rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 183px;
+                padding: 1.0625rem 1.5rem;
+            }
+        }
+    }
+
+    &.btn-sm {
+        color: $white;
+        border-color: $white;
+        padding: 0.6438rem;
+
+        @include media-breakpoint-up(md) {
+            min-width: 125px;
+            padding: 0.7438rem 0.6rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-width: 130px;
+            padding: 0.9438rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 139px;
+            padding: 1.0625rem 1rem;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+            // border-color: $dark-blue;
+        }
+
+        &--alt {
+            @include media-breakpoint-up(md) {
+                min-width: 130px;
+                padding: 0.625rem 0.6rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                min-width: 140px;
+                padding: 0.75rem 0.8rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 146px;
+                padding: 0.875rem 1rem;
+            }
+        }
+    }
+
+    &.btn-md {
+
+        background-color: $white;
+        color: $dark-blue;
+        border-color: $dark-blue;
+        padding: 0.6438rem;
+
+        @include media-breakpoint-up(md) {
+            min-width: 160px;
+            padding: 1rem 0.6rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.0625rem);
+            min-width: 180px;
+            padding: 1.125rem 0.8rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-width: 209px;
+            padding: 1.3125rem 1rem;
+        }
+
+        &:hover {
+            background-color: $dark-blue;
+            color: $white;
+            border-color: $dark-blue;
+        }
+    }
+
+}
