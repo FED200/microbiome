@@ -1,31 +1,92 @@
 .form {
+    &-wrap {
+        picture, figure {
+            height: 300px;
+
+            @include media-breakpoint-up(md) {
+                height: 500px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 100%;
+            }
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                @include media-breakpoint-up(lg) {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+
     &-block {
         background: transparent linear-gradient(180deg, #002C5D 0%, #021C3A 100%) 0% 0% no-repeat padding-box;
-        padding: 78px 40px 100px 105px;
+        padding: 30px;
+        height: 100%;
 
-        
+        @include media-breakpoint-up(lg) {
+            padding: 69px 40px 69px 85px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 69px 40px 69px 105px;
+        }
     }
 
     &-group {
-        margin-bottom: 24px;
-        
+        margin-bottom: 16px;
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 24px;
+        }
+
         label {
             color: $white;
             @include font-size(1rem);
             font-weight: 300;
         }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            color: $dark-blue-1;
+            @include font-size(0.875rem);
+            background-image: url(./assets/images/arrow-down.png);
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 50%;
+            padding-right: 28px;
+        }
     }
 
     &-control {
         border: 1px solid $dark-blue-4;
-        height: 60px;
-        padding: 22px 20px;
+        height: 50px;
+        padding: 10px 20px;
         border-radius: 5px;
         background-color: transparent;
+
+        @include media-breakpoint-up(xxl) {
+            height: 60px;
+            padding: 15px 20px;
+        }
 
         &::placeholder {
             color: $dark-blue-1;
             @include font-size(0.875rem);
+        }
+
+        &:focus {
+            background-color: transparent;
+            border-color: rgba($strong-cyan, 0.25);
         }
     }
 }

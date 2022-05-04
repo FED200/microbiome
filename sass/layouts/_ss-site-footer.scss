@@ -24,6 +24,11 @@
             @include font-size(1rem);
             line-height: 2;
             font-weight: 300;
+
+            &:hover {
+                color: $primary;
+                text-decoration: none;
+            }
         }
     }
 
@@ -61,7 +66,8 @@
 
 .social-icon {
     @include media-breakpoint-up(xl) {
-        max-width: 230px;
+        max-width: 205px;
+        margin: 0 auto;
     }
     li {
         padding: 0 0.75rem;

@@ -2,6 +2,21 @@
     &-media {
         position: relative;
 
+        &:hover {
+            .btn-wrap {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .card-media__title {
+                display: none;
+                // opacity: 0;
+                // visibility: hidden;
+                // font-size: 0;
+            }
+        }
+        
+
         &__img {
             position: relative;
         }
@@ -16,6 +31,23 @@
             text-align: center;
             height: 61px;
             padding: 10px 0;
+            transition: all .2s;
+        }
+
+        .btn-wrap {
+            background: rgba($dark-blue-5, 0.78);
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 500ms ease-in-out 25ms;
+            transition: all .2s ease;
         }
     }
 }

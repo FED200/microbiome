@@ -70,9 +70,21 @@ iframe {
 }
 
 .no-gutters {
-	margin: auto 0;
+	margin-right: 0;
+    margin-left: 0;
 
 	[class*="col-"] {
-		padding: auto 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+.gutter-sm {
+	margin-right: -5px;
+    margin-left: -5px;
+
+	[class*="col-"] {
+		padding-right: 5px;
+		padding-left: 5px;
 	}
 }
