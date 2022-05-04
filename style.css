@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("assets/fonts/icomoon.eot?ufjlnl");
-  src: url("assets/fonts/icomoon.eot?ufjlnl#iefix") format("embedded-opentype"), url("assets/fonts/icomoon.ttf?ufjlnl") format("truetype"), url("assets/fonts/icomoon.woff?ufjlnl") format("woff"), url("assets/fonts/icomoon.svg?ufjlnl#icomoon") format("svg");
+  src: url("assets/fonts/icomoon.eot?j6de26");
+  src: url("assets/fonts/icomoon.eot?j6de26#iefix") format("embedded-opentype"), url("assets/fonts/icomoon.ttf?j6de26") format("truetype"), url("assets/fonts/icomoon.woff?j6de26") format("woff"), url("assets/fonts/icomoon.svg?j6de26#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,24 +21,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-feather-arrow-right:before {
-  content: "\e90b";
-}
-
-.icon-email:before {
-  content: "\e900";
-}
-
-.icon-facebook:before {
-  content: "\e901";
-}
-
 .icon-focus:before {
   content: "\e902";
-}
-
-.icon-format-quote:before {
-  content: "\e903";
 }
 
 .icon-eye:before {
@@ -53,8 +37,20 @@
   content: "\e906";
 }
 
+.icon-heart-shape:before {
+  content: "\e915";
+}
+
 .icon-heart:before {
   content: "\e907";
+}
+
+.icon-minus:before {
+  content: "\e90b";
+}
+
+.icon-plus:before {
+  content: "\e91a";
 }
 
 .icon-circle-minus:before {
@@ -65,6 +61,14 @@
   content: "\e909";
 }
 
+.icon-facebook:before {
+  content: "\e901";
+}
+
+.icon-twitter:before {
+  content: "\e919";
+}
+
 .icon-lnkedin:before {
   content: "\e90a";
 }
@@ -73,8 +77,36 @@
   content: "\e90c";
 }
 
-.icon-long-arrow-right:before {
+.icon-long-arrow-left:before {
   content: "\e90d";
+}
+
+.icon-Path-593:before {
+  content: "\e91e";
+}
+
+.icon-feather-arrow-left:before {
+  content: "\e91f";
+}
+
+.icon-feather-arrow-right:before {
+  content: "\e920";
+}
+
+.icon-down-arrow:before {
+  content: "\e91d";
+}
+
+.icon-arrow-left:before {
+  content: "\e921";
+}
+
+.icon-arrow-right:before {
+  content: "\e911";
+}
+
+.icon-leaf:before {
+  content: "\e917";
 }
 
 .icon-jar:before {
@@ -89,10 +121,6 @@
   content: "\e910";
 }
 
-.icon-arrow:before {
-  content: "\e911";
-}
-
 .icon-circle-arrow-down:before {
   content: "\e912";
 }
@@ -101,44 +129,32 @@
   content: "\e913";
 }
 
-.icon-location:before {
-  content: "\e914";
-}
-
-.icon-heart-shape:before {
-  content: "\e915";
-}
-
-.icon-play:before {
-  content: "\e916";
-}
-
-.icon-leaf:before {
-  content: "\e917";
-}
-
-.icon-quote:before {
-  content: "\e918";
-}
-
-.icon-twitter:before {
-  content: "\e919";
-}
-
-.icon-plus:before {
-  content: "\e91a";
-}
-
-.icon-arrow-drop-down:before {
-  content: "\e91b";
+.icon-email:before {
+  content: "\e900";
 }
 
 .icon-call:before {
   content: "\e91c";
 }
 
-.icon-down-arrow:before {
-  content: "\e91d";
+.icon-location:before {
+  content: "\e914";
+}
+
+.icon-play:before {
+  content: "\e916";
+}
+
+.icon-format-quote:before {
+  content: "\e903";
+}
+
+.icon-quote:before {
+  content: "\e918";
+}
+
+.icon-arrow-drop-down:before {
+  content: "\e91b";
 }
 
 :root {
@@ -12241,11 +12257,23 @@ iframe {
 }
 
 .no-gutters {
-  margin: auto 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .no-gutters [class*="col-"] {
-  padding: auto 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.gutter-sm {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.gutter-sm [class*="col-"] {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .btn {
@@ -12467,13 +12495,63 @@ iframe {
   border-color: #002c5d;
 }
 
+.form-wrap picture, .form-wrap figure {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .form-wrap picture, .form-wrap figure {
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .form-wrap picture, .form-wrap figure {
+    height: 100%;
+  }
+}
+
+.form-wrap picture img, .form-wrap figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .form-wrap picture img, .form-wrap figure img {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
 .form-block {
   background: transparent linear-gradient(180deg, #002C5D 0%, #021C3A 100%) 0% 0% no-repeat padding-box;
-  padding: 78px 40px 100px 105px;
+  padding: 30px;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .form-block {
+    padding: 69px 40px 69px 85px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-block {
+    padding: 69px 40px 69px 105px;
+  }
 }
 
 .form-group {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 1440px) {
+  .form-group {
+    margin-bottom: 24px;
+  }
 }
 
 .form-group label {
@@ -12482,17 +12560,42 @@ iframe {
   font-weight: 300;
 }
 
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #24456a;
+  font-size: 0.875rem;
+  background-image: url(./assets/images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  padding-right: 28px;
+}
+
 .form-control {
   border: 1px solid #1f4065;
-  height: 60px;
-  padding: 22px 20px;
+  height: 50px;
+  padding: 10px 20px;
   border-radius: 5px;
   background-color: transparent;
+}
+
+@media (min-width: 1440px) {
+  .form-control {
+    height: 60px;
+    padding: 15px 20px;
+  }
 }
 
 .form-control::placeholder {
   color: #24456a;
   font-size: 0.875rem;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: rgba(2, 201, 184, 0.25);
 }
 
 textarea.form-control {
@@ -12802,6 +12905,15 @@ textarea.form-control {
   position: relative;
 }
 
+.card-media:hover .btn-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-media:hover .card-media__title {
+  display: none;
+}
+
 .card-media__img {
   position: relative;
 }
@@ -12816,6 +12928,23 @@ textarea.form-control {
   text-align: center;
   height: 61px;
   padding: 10px 0;
+  transition: all .2s;
+}
+
+.card-media .btn-wrap {
+  background: rgba(5, 79, 161, 0.78);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease-in-out 25ms;
+  transition: all .2s ease;
 }
 
 .list {
@@ -12997,6 +13126,11 @@ textarea.form-control {
   font-weight: 300;
 }
 
+.footer-item a:hover {
+  color: #002c5d;
+  text-decoration: none;
+}
+
 .footer-product .list {
   column-count: 2;
 }
@@ -13033,7 +13167,8 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
   .social-icon {
-    max-width: 230px;
+    max-width: 205px;
+    margin: 0 auto;
   }
 }
 

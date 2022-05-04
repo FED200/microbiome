@@ -170,21 +170,44 @@
 								<picture>
 									<source srcset="assets/images/story01.webp" type="image/webp">
 									<source srcset="assets/images/story01.jpg" type="image/jpg">
-									<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy"
-										alt="Story image">
+									<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy" alt="Story image">
 								</picture>
 								<div class="card-media__title">
-									<h3>Story 1</h3>
+									<h3 class="h5 mb-0">Story 1</h3>
 								</div>
-							</div> <!-- / .card-img -->
+							</div> <!-- / .card-media__img -->
 							<div class="btn-wrap">
-								<a href="#">Learn more</a>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-media -->
+					</div>
+				</div>
+				<hr>
+				<hr>
+				<h2>.card-media.card-media--alt</h2>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="card-media">
+							<div class="card-media__img">
+								<picture>
+									<source srcset="assets/images/gerd.webp" type="image/webp">
+									<source srcset="assets/images/gerd.jpg" type="image/jpg">
+									<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy" alt="Gerd image">
+								</picture>
+								<div class="card-media__title">
+									<h3 class="h5 mb-0">Gastroesophageal Reflux Disease (GERD)</h3>
+								</div>
+							</div> <!-- / .card-media__img -->
+							<div class="card-media__body">
+								<h3 class="h5 mb-0">Gastroesophageal Reflux Disease (GERD)</h3>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+								</div>
 							</div>
 						</div> <!-- / .card-media -->
 					</div>
 				</div>
 			</div>
-
 			<hr>
 			<hr>
 
@@ -213,80 +236,85 @@
 			<hr>
 			<hr>
 
+			<h2>.form-wrap</h2>
 			<section class="form-wrap">
 				<div class="container">
-					<div class="row no-gutters">
+					<div class="row flex-row-reverse no-gutters">
+						<div class="col-lg-6">
+							<picture>
+								<source srcset="assets/images/map.webp" type="image/webp">
+								<source srcset="assets/images/map.jpg" type="image/jpg">
+								<img src="assets/images/map.jpg" width="631" height="707" loading="lazy" alt="Map image">
+							</picture>
+						</div>
 						<div class="col-lg-6">
 							<div class="form-block">
+								<div class="section-title text-white">
+									<h2><span>Contact Us</span>Drop us an Mail</h1>
+								</div><!-- / .section-title-->
 								<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
 									<div class="form-header">
 									</div>
-
+	
 									<div class="form-section-0">
-										<div class="row">
-											<div class="col-lg-6">
+										<div class="row gutter-sm">
+											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="">Name*</label>
-													<input class="form-control" placeholder="Enter your name here... "
-														name="first-name" type="text" value="">
+													<input class="form-control" placeholder="Enter your name here... " name="first-name" type="text" value="">
 													<div class="messages"></div>
 												</div>
 											</div>
-											<div class="col-lg-6">
+											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="">Email*</label>
-													<input class="form-control" placeholder="Email address here..."
-														name="email" type="email" value="">
+													<input class="form-control" placeholder="Email address here..." name="email" type="email" value="">
 													<div class="messages"></div>
 												</div>
 											</div>
-											<div class="col-lg-6">
+											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="">Phone number</label>
-													<input class="form-control" placeholder="Enter your contact number"
-														name="phone-number" type="text" value="">
+													<input class="form-control" placeholder="Enter your contact number" name="phone-number" type="text" value="">
 													<div class="messages"></div>
 												</div>
 											</div>
-											<div class="col-lg-6">
+											<div class="col-sm-6">
 												<div class="form-group">
 													<label for="">Location</label>
-													<input class="form-control"
-														placeholder="What program are you interested in"
-														name="last-name" type="text" value="">
+													<select class="form-control  advanced-select2 " name="services" id="Z1Q7u"  data-placeholder="Select Placeholder" >
+													<option value="">Please Select</option>
+													<option value="Option One">Option One [Change Me]</option>
+													<option value="Option Two">Option Two [Change Me]</option>
+													</select>
+													<!-- Add more options if needed -->
 													<div class="messages"></div>
 												</div>
 											</div>
-										</div>
+										</div>										
 										<div class="form-group">
 											<label for="">Message</label>
-											<textarea class="form-control" placeholder="Your message..."
-												name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+											<textarea class="form-control" placeholder="Your message..." name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
 											<div class="messages"></div>
 										</div>
 									</div>
-									<div class="form-footer mt-xl-2 mt-1">
-										<button type="submit" class="submitButton btn btn-primary btn-primary--md">
+									<div class="form-footer mt-xl-2 mt-1"> 
+										<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
 											Submit Form
 										</button>
 									</div>
 								</form>
 							</div> <!-- / .form-block -->
 						</div>
-						<div class="col-lg-6">
-							<picture>
-								<source srcset="assets/images/map.webp" type="image/webp">
-								<source srcset="assets/images/map.jpg" type="image/jpg">
-								<img src="assets/images/map.jpg" width="631" height="707" loading="lazy"
-									alt="Map image">
-							</picture>
-						</div>
 					</div>
 				</div>
 			</section> <!-- / .form-wrap -->
+			<hr>
+			<hr>
 
 		</main> <!-- / .site-content -->
-
+		
+		<h2>.site-footer</h2>
 		<footer id="footer" class="site-footer pt-6">
 			<div class="container">
 				<div class="row">
@@ -360,8 +388,7 @@
 					</div>
 				</div>
 			</div>
-			<span class="copyright text-center py-1 mt-xl-3 mt-sm-2 mt-1">Copyright &copy; Revolution GUT Health. All
-				rights reserved.</span>
+			<span class="copyright text-center py-1 mt-xl-3 mt-sm-2 mt-1">Copyright &copy; 2022 Revolution GUT Health. All rights reserved.</span>
 		</footer> <!-- / .site-footer -->
 
 	</div>
