@@ -1,0 +1,32 @@
+.section-title {
+    color: $dark-blue;
+    text-transform: capitalize;
+
+    h2 {
+        @include font-size(1.5rem);
+
+        @include media-breakpoint-up(md) {
+            @include font-size(2rem);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include font-size(3rem);
+        }
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            @include font-size(1rem);
+            font-weight: 300;
+        }
+    }
+
+    &--alt {
+        color: $white;
+    }
+
+    &__max-width {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
