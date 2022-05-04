@@ -156,7 +156,7 @@ $enable-hover-media-query:                    false !default; // Deprecated, no 
 $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
-$enable-responsive-font-sizes:                false !default;
+$enable-responsive-font-sizes:                true;
 $enable-validation-icons:                     true !default;
 $enable-deprecation-messages:                 true !default;
 
@@ -236,7 +236,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xl: 1440px
+  xxl: 1440px
 );
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
