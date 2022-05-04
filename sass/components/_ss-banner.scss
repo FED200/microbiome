@@ -44,6 +44,28 @@
             }
         }       
     }
+
+    &-inner{
+        &__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 250px;
+    
+            @include media-breakpoint-up(md) {
+                min-height: 300px;
+            }
+    
+            @include media-breakpoint-up(lg) {
+                min-height: 350px;
+            } 
+            
+        }
+
+        .breadcrumb{
+            
+        }
+    }
 }
 
 .overlay-bg{

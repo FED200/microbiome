@@ -12590,6 +12590,25 @@ textarea.form-control {
   }
 }
 
+.banner-inner__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+@media (min-width: 768px) {
+  .banner-inner__content {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-inner__content {
+    min-height: 350px;
+  }
+}
+
 .overlay-bg {
   position: relative;
   z-index: 1;
