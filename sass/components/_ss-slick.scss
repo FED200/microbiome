@@ -1,9 +1,6 @@
 //banner
 .banner {
     &-slider {
-        @include media-breakpoint-down(lg) {
-            padding-bottom: 45px;
-        }
 
         &__item {}
 
@@ -23,7 +20,7 @@
                 transition: all 0.3s ease-in-out;
 
                 @include media-breakpoint-down(lg) {
-                    margin-right: 0.5rem;
+                    margin: 1.5rem 0.5rem;
                 }
 
                 &:focus,
@@ -36,6 +33,9 @@
                     font-family: 'icomoon';
                     @include font-size(1rem);
                     color: $strong-cyan;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     // color: $soft-red-1;
 
                 }
@@ -46,26 +46,7 @@
                 right: 50.4%;
 
                 @include media-breakpoint-up(lg) {
-                    right: 50px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-
-                @include media-breakpoint-up(xl) {
-                    right: 100px;
-                }
-
-
-                &:before {
-                    content: '\e911';
-                }
-            }
-
-            &-next {
-                right: auto;
-                left: 50.4%;
-
-                @include media-breakpoint-up(lg) {
+                    right: auto;
                     left: 50px;
                     top: 50%;
                     transform: translateY(-50%);
@@ -75,8 +56,30 @@
                     left: 100px;
                 }
 
+
+
                 &:before {
                     content: '\e921';
+                }
+            }
+
+            &-next {
+                right: auto;
+                left: 50.4%;
+
+                @include media-breakpoint-up(lg) {
+                    right: 50px;
+                    left: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                @include media-breakpoint-up(xl) {
+                    right: 100px;
+                }
+
+                &:before {
+                    content: '\e911';
                 }
             }
 

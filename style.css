@@ -12311,6 +12311,12 @@ iframe {
   padding-left: 5px;
 }
 
+@media (max-width: 991.98px) {
+  .w-100 {
+    width: 100%;
+  }
+}
+
 .btn {
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -12470,8 +12476,8 @@ iframe {
 }
 
 .btn.btn-sm:hover, .btn-group-sm > .btn:hover {
-  background-color: #002c5d;
-  color: #fff;
+  background-color: #fff;
+  color: #002c5d;
 }
 
 @media (min-width: 768px) {
@@ -12643,13 +12649,7 @@ textarea.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
-}
-
-@media (min-width: 768px) {
-  .banner-content {
-    min-height: 400px;
-  }
+  min-height: 400px;
 }
 
 @media (min-width: 992px) {
@@ -12660,19 +12660,19 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
   .banner-content {
-    min-height: 594px;
+    min-height: 592px;
   }
 }
 
 .banner-info {
   max-width: 843px;
+  padding: 1rem;
 }
 
 .banner-info h1 {
   color: #fff;
   font-weight: 600;
   font-size: 2rem;
-  margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
@@ -12727,6 +12727,38 @@ textarea.form-control {
   .banner-info h1 {
     font-size: calc(1.575rem + 3.9vw) ;
   }
+}
+
+.banner-info .btn-play {
+  display: inline-block;
+}
+
+.banner-info .btn-play a {
+  font-size: 0.9rem;
+  color: #02c9b8;
+  padding: 0.3rem;
+  width: 35px;
+  height: 35px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #02c9b8;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .banner-info .btn-play a {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.banner-info .btn-play a:hover {
+  background-color: #02c9b8;
+  color: #fff;
+  text-decoration: none;
 }
 
 .banner-inner__content {
@@ -12789,12 +12821,6 @@ textarea.form-control {
   z-index: -1;
 }
 
-@media (max-width: 1199.98px) {
-  .banner-slider {
-    padding-bottom: 45px;
-  }
-}
-
 .banner-slider .slick-arrow {
   font-size: 0;
   line-height: 1;
@@ -12812,7 +12838,7 @@ textarea.form-control {
 
 @media (max-width: 1199.98px) {
   .banner-slider .slick-arrow {
-    margin-right: 0.5rem;
+    margin: 1.5rem 0.5rem;
   }
 }
 
@@ -12825,6 +12851,9 @@ textarea.form-control {
   font-family: 'icomoon';
   font-size: 1rem;
   color: #02c9b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-slider .slick-prev {
@@ -12834,7 +12863,8 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .banner-slider .slick-prev {
-    right: 50px;
+    right: auto;
+    left: 50px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -12842,12 +12872,12 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
   .banner-slider .slick-prev {
-    right: 100px;
+    left: 100px;
   }
 }
 
 .banner-slider .slick-prev:before {
-  content: '\e911';
+  content: '\e921';
 }
 
 .banner-slider .slick-next {
@@ -12857,7 +12887,8 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .banner-slider .slick-next {
-    left: 50px;
+    right: 50px;
+    left: auto;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -12865,12 +12896,12 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
   .banner-slider .slick-next {
-    left: 100px;
+    right: 100px;
   }
 }
 
 .banner-slider .slick-next:before {
-  content: '\e921';
+  content: '\e911';
 }
 
 .banner-slider .slick-track {
@@ -13148,7 +13179,7 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
   .site-header {
-    background-color: #000;
+    background-color: #002c5d;
   }
 }
 
@@ -13191,7 +13222,6 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
   .site-header .navbar-nav .nav-item {
-    background-color: #000;
     text-align: center;
     border-bottom: 1px solid #fff;
   }
@@ -13220,6 +13250,12 @@ textarea.form-control {
 
 .site-header .navbar-nav .nav-link:hover {
   color: #dc3545;
+}
+
+@media (max-width: 991.98px) {
+  .site-header .navbar .btn-wrap button {
+    width: 100%;
+  }
 }
 
 .site-header .navbar-toggler {
@@ -13272,7 +13308,7 @@ textarea.form-control {
     bottom: 0;
     transition: all .2s;
     z-index: 100;
-    background-color: #fff;
+    background-color: #002c5d;
     padding: 3rem 1rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19);
   }
