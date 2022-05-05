@@ -12908,6 +12908,10 @@ textarea.form-control {
   height: inherit;
 }
 
+.banner-slider .slick-disabled {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .section-title {
   color: #002c5d;
   text-transform: capitalize;

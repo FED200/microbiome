@@ -94,6 +94,9 @@
             &-slide {
                 height: inherit;
             }
+            &-disabled{
+                background-color: rgba($white, 0.60);
+            }
         }
     }
 }
