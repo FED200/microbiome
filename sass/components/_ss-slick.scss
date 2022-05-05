@@ -17,15 +17,19 @@
                 bottom: 0;
                 z-index: 5;
                 color: $white;
+                border: 1px solid transparent;
                 transition: all 0.3s ease-in-out;
 
                 @include media-breakpoint-down(lg) {
-                    margin: 1.5rem 0.5rem;
+                    margin: 0rem 0.1rem 2.8rem 0.1rem;
                 }
 
                 &:focus,
                 &:hover {
-                    outline: 0;
+                    // outline: 0;
+                    border-color: $strong-cyan;
+                    background-color: $dark-blue;
+                   
                 }
 
                 &:before {
@@ -36,7 +40,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    // color: $soft-red-1;
+                    transition: all 0.3s;                   
 
                 }
             }

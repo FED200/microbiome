@@ -4,7 +4,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 400px;
+        min-height: 450px;
   
         @include media-breakpoint-up(lg) {
             min-height: 500px;
@@ -48,21 +48,15 @@
                 @include font-size(0.9rem);
                 color: $strong-cyan;
                 padding: 0.3rem;
-                width: 35px;
-                height: 35px;
+                width: 50px;
+                height: 50px;
                 line-height: 1;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border: 1px solid $strong-cyan;
                 border-radius: 50%;
-                transition: all 0.3s;
-
-                @include media-breakpoint-up(lg) {
-                    width: 50px;
-                    height: 50px;
-                }
-
+                transition: all 0.3s;              
                 &:hover {
                     background-color: $strong-cyan;
                     color: $white;
