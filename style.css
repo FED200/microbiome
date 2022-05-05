@@ -13688,7 +13688,7 @@ textarea.form-control {
   margin: 0 auto;
 }
 
-.slick-dots {
+.product-slider .slick-dots {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -13696,15 +13696,15 @@ textarea.form-control {
   padding: 0;
 }
 
-.slick-dots li {
+.product-slider .slick-dots li {
   margin: 0 0.25rem;
 }
 
-.slick-dots .slick-active button {
+.product-slider .slick-dots .slick-active button {
   background-color: #002c5d;
 }
 
-.slick-dots button {
+.product-slider .slick-dots button {
   background-color: #f3f3f3;
   border: 1px solid transparent;
   outline: none;
@@ -13719,7 +13719,7 @@ textarea.form-control {
   transition: .3s ease-in-out;
 }
 
-.slick-arrow {
+.product-slider .slick-arrow {
   font-size: 0;
   line-height: 1;
   border: 1px solid #f3f3f3;
@@ -13734,11 +13734,11 @@ textarea.form-control {
   height: 35px;
 }
 
-.slick-arrow:focus {
+.product-slider .slick-arrow:focus {
   outline: 0;
 }
 
-.slick-arrow:before {
+.product-slider .slick-arrow:before {
   content: '\e921';
   font-family: 'icomoon';
   font-size: 0.875rem;
@@ -13746,24 +13746,24 @@ textarea.form-control {
   transition: all .2s;
 }
 
-.slick-prev {
+.product-slider .slick-prev {
   left: 0;
 }
 
-.slick-next {
+.product-slider .slick-next {
   right: 0;
 }
 
-.slick-next:before {
+.product-slider .slick-next:before {
   content: '\e911';
 }
 
-.slick-disabled {
+.product-slider .slick-disabled {
   background-color: #fff;
   border: 1px solid #d4cfcf;
 }
 
-.slick-disabled:before {
+.product-slider .slick-disabled:before {
   color: #000;
 }
 
