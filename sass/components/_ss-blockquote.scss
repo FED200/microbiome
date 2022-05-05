@@ -1,0 +1,68 @@
+.blockquote {
+    box-shadow: 0px 25px 30px #AAAAAA29;
+    text-align: center;
+    padding: 2rem 1.3125rem;
+    position: relative;
+    height: 100%;
+    transition: all 0.3s;
+
+    @include media-breakpoint-up(lg) {
+        padding: 2.5rem 1.3125rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 3rem 1.3125rem;
+    }
+
+    &:hover{
+        transform: translateY(-8px);
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '\e918';
+        font-family: 'icomoon';
+        top: 25px;
+        left: 25px;
+        color:rgba($dark-gray-2, 0.4) ;
+        @include font-size(2rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(2.5rem);
+
+        }
+
+    }
+
+    &-media {
+        display: inline-block;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &-content {
+        color: $dark-gray-2;
+        @include font-size(0.875rem);
+        line-height: 30px;
+
+        h3 {
+            @include font-size(1.125rem);
+            font-weight: 500;
+            color: $black;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.5rem);
+            }
+        }
+
+        small {
+            display: block;
+            @include font-size(1rem);
+            color: $dark-gray-2;
+            margin-top: 1rem;
+        }
+    }
+}

@@ -12829,22 +12829,6 @@ textarea.form-control {
   color: #02c9b8;
 }
 
-.overlay-bg {
-  position: relative;
-  z-index: 1;
-}
-
-.overlay-bg::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 44, 93, 0.75);
-  z-index: -1;
-}
-
 .banner-slider .slick-arrow {
   font-size: 0;
   line-height: 1;
@@ -13314,6 +13298,41 @@ textarea.form-control {
   flex-direction: column;
 }
 
+.card-video {
+  box-shadow: 0px 25px 30px #AAAAAA29;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.card-video:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.card-video__content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  width: 100%;
+}
+
+.card-video__content h3 {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .card-video__content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.card-video__thumbnail img {
+  width: 100%;
+}
+
 .cta-block {
   display: flex;
   justify-content: center;
@@ -13391,6 +13410,99 @@ textarea.form-control {
   .cta-block__info h2 {
     font-size: calc(1.49375rem + 2.925vw) ;
   }
+}
+
+.blockquote {
+  box-shadow: 0px 25px 30px #AAAAAA29;
+  text-align: center;
+  padding: 2rem 1.3125rem;
+  position: relative;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+  .blockquote {
+    padding: 2.5rem 1.3125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blockquote {
+    padding: 3rem 1.3125rem;
+  }
+}
+
+.blockquote:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.blockquote::before {
+  position: absolute;
+  content: '\e918';
+  font-family: 'icomoon';
+  top: 25px;
+  left: 25px;
+  color: rgba(102, 102, 102, 0.4);
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .blockquote::before {
+    font-size: calc(1.325rem + 0.9vw) ;
+  }
+}
+
+@media (min-width: 992px) {
+  .blockquote::before {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .blockquote::before {
+    font-size: calc(1.375rem + 1.5vw) ;
+  }
+}
+
+.blockquote-media {
+  display: inline-block;
+}
+
+.blockquote-media img {
+  border-radius: 50%;
+}
+
+.blockquote-content {
+  color: #666666;
+  font-size: 0.875rem;
+  line-height: 30px;
+}
+
+.blockquote-content h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  .blockquote-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .blockquote-content h3 {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+.blockquote-content small {
+  display: block;
+  font-size: 1rem;
+  color: #666666;
+  margin-top: 1rem;
 }
 
 .site-header {

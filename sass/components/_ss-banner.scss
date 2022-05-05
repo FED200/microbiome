@@ -120,18 +120,3 @@
     }
 }
 
-.overlay-bg {
-    position: relative;
-    z-index: 1;
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba($dark-blue, 0.75);
-        z-index: -1;
-    }
-}
