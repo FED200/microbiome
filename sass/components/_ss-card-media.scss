@@ -15,7 +15,7 @@
                 // font-size: 0;
             }
         }
-        
+
 
         &__img {
             position: relative;
@@ -48,6 +48,43 @@
             justify-content: center;
             transition: transform 500ms ease-in-out 25ms;
             transition: all .2s ease;
+        }
+    }
+
+    &-team {
+        text-align: center;
+
+        &__media {
+            display: inline-block;
+
+            img {
+                border-radius: 50%;
+                border: 6px solid $dark-blue;
+            }
+
+        }
+
+        &__info {
+            background-color: $white;
+            padding: 1rem;
+            max-width: 250px;
+            margin: 0 auto;
+            box-shadow: 0px 7px 14px #0000000F;
+            margin-top: -50px;
+            position: relative;
+
+            h3 {
+                @include font-size(1.25rem);
+                color: $dark-blue;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            small {
+                display: block;
+                @include font-size(0.8125rem);
+                color: $dark-gray-1;
+            }
         }
     }
 }
