@@ -1,0 +1,23 @@
+.tile-icon {
+    i {
+        display: block;
+        @include font-size(3rem);
+        color: $dark-blue;
+        margin-bottom: 1rem;
+
+    }
+
+    &__content {
+        @include font-size(1rem);
+        font-weight: 300;
+        line-height: 27px;
+        color: $dark-gray-1;
+
+        h4 {
+            color: $dark-blue;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+}

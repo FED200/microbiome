@@ -13301,6 +13301,7 @@ textarea.form-control {
 .card-video {
   box-shadow: 0px 25px 30px #AAAAAA29;
   position: relative;
+  height: 100%;
   transition: all 0.3s;
 }
 
@@ -13329,8 +13330,13 @@ textarea.form-control {
   }
 }
 
+.card-video__thumbnail {
+  height: 100%;
+}
+
 .card-video__thumbnail img {
   width: 100%;
+  height: 100%;
 }
 
 .cta-block {
@@ -13503,6 +13509,33 @@ textarea.form-control {
   font-size: 1rem;
   color: #666666;
   margin-top: 1rem;
+}
+
+.tile-icon i {
+  display: block;
+  font-size: 3rem;
+  color: #002c5d;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .tile-icon i {
+    font-size: calc(1.425rem + 2.1vw) ;
+  }
+}
+
+.tile-icon__content {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 27px;
+  color: #333333;
+}
+
+.tile-icon__content h4 {
+  color: #002c5d;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .site-header {
@@ -13683,6 +13716,12 @@ textarea.form-control {
 @media (min-width: 992px) {
   .faq .container {
     max-width: 848px;
+  }
+}
+
+@media (min-width: 992px) {
+  .success-stories .container {
+    max-width: 1202px;
   }
 }
 
