@@ -1,0 +1,167 @@
+.card {
+    &-product {
+        border: 1px solid $gray-200;
+        border-radius: 5px;
+        padding: 36px 0;
+        transition: all 1s;
+        height: 100%;
+
+        &:hover {
+            transition: all .5s;
+            transform: translateY(-16px);
+            // box-shadow: 0 19px 30px rgb(0 44 93 / 21%);
+            box-shadow: 0 1.375rem 1.25rem rgba($dark-blue, 0.21);
+
+            .card-product__body {
+                .h5 {
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        &__body {
+            text-transform: uppercase;
+            color: $dark-gray-2;
+            font-weight: 300;
+            padding: 0 46px;
+            
+            .h5 {
+                color: $black;
+                font-weight: 600;
+                text-transform: none;
+            }
+
+            small {
+                vertical-align: top;
+                font-weight: 600;
+            }
+        }
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.product {
+    &-slider {
+        padding: 0 32px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 48px;
+        }
+        .slick {
+            &-list {
+                margin: 0 -8px;
+            }
+
+            &-track {
+                @include media-breakpoint-up(lg) {
+                    display: flex;
+                    padding: 1rem 0;
+                }
+            }
+
+            &-slide {
+                @include media-breakpoint-up(lg) {
+                    height: inherit;
+                }
+            }
+        }
+    }
+    &-item {
+        padding: 0 8px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin: 0 0.25rem;
+    }
+
+    .slick-active {
+        button{
+            background-color: $primary;
+        }
+    }
+
+    button {
+        background-color: $gray-400;
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: none;
+        @include font-size(0);
+        padding: 0;
+        border-radius: 10px;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        z-index: 1;
+        transition: .3s ease-in-out;
+    }
+}
+
+
+.slick {
+    &-arrow {
+        font-size: 0;
+        line-height: 1;
+        border: 1px solid $gray-400;
+        border-radius: 5px;
+        background-color: $primary;
+        position: absolute;
+        z-index: 5;
+        transition: all .2s;
+        top: 50%; 
+        transform: translateY(-50%);
+        width: 35px;
+        height: 35px;
+
+        // @include media-breakpoint-down(sm) {
+        //     display: none!important;
+        // }
+        
+        &:focus {
+            outline: 0;
+        }
+
+        &:before {
+            content: '\e921';
+            font-family: 'icomoon';
+            @include font-size(0.875rem);
+            color: $white;
+            transition: all .2s;
+        }
+    }
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+        right: 0;
+
+        &:before {
+            content: '\e911';
+        }
+    }
+
+    &-disabled {
+        background-color: $white;
+        border: 1px solid $grayish-red;
+
+        &:before {
+            color: $black;
+        }
+    }
+}
