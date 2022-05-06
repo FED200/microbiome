@@ -98,5 +98,28 @@ $(document).ready(function () {
             }
         ]
     });
+    //slider-col-3
+    $('.slider-col-3').slick({
+        infinite: false,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        slidesToScroll: 1,
+        responsive: [            
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
 
 });
