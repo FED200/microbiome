@@ -1,10 +1,26 @@
 .card {
     &-services {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
-        min-height: 380px;
+        justify-content: center;
+        padding: 2.875rem 1.125rem;
         height: 100%;
-        justify-content: centers;
+        border-radius: .3125rem;
+        overflow: hidden;
+
+        @include media-breakpoint-up(md) {
+            padding: 3.875rem 1.125rem;
+        }
+
+        .row {
+            margin: 0 -0.6875rem;
+        }
+
+        [class*="col-"] {
+            padding: 0 0.6875rem;
+        }
 
         &__media {
             img {
@@ -12,14 +28,21 @@
             }
         }
 
-        &__desc {
-            color: $white;
-            @include font-size(.875rem);
+        &-block {
+            &>.row {
+                margin: 0 -0.5rem;
 
-            @include media-breakpoint-up(lg) {
-                padding-left: .6875rem;
-                padding-right: 1.375rem;
+                &>[class*="col-"] {
+                    padding: 0 0.5rem;
+                    margin-bottom: 1.5625rem;
+                }
             }
+        }
+
+        &__info {
+            color: $white;
+            line-height: 1.5;
+            @include font-size(.875rem);
 
             @include media-breakpoint-down(md) {
                 text-align: center;
@@ -27,8 +50,10 @@
 
             .btn-wrap a {
                 color: $white;
+                text-transform: capitalize;
                 overflow: hidden;
                 transition: all .3s;
+                font-weight: 700;
 
                 i {
                     margin-left: .5rem;
@@ -37,16 +62,26 @@
             }
         }
 
-        &--image {
-            padding-left: 1.125rem;
-            padding-right: .6875rem;
+        &--alt {
+            text-align: center;
 
+            @include media-breakpoint-up(md) {
+                padding: 3.875rem 0 1.625rem;
+            }
+
+            .row {
+                padding: 0 0.9375rem;
+            }
+
+            .card-services {
+
+                &__media,
+                &__info {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
         }
-
-        &--content {
-            flex-direction: column;
-        }
-
     }
 
     &-video {

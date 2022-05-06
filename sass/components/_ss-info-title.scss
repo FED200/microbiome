@@ -1,0 +1,14 @@
+.info-title {
+
+    &__desc {
+        h2 {
+            color: $dark-blue-7;
+        }
+    }
+
+    &__media {
+        img {
+            border-radius: 50%;
+        }
+    }
+}

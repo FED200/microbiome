@@ -1,0 +1,31 @@
+.media-frame {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $strong-cyan;
+        z-index: -1;
+    }
+
+    &--btm {
+        &Left {
+            padding: 0 0 .625rem .625rem;
+
+            @include media-breakpoint-up(md) {
+                padding: 0 0 17px 17px;
+            }
+
+            &::before {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+}

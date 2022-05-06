@@ -13559,13 +13559,31 @@ textarea.form-control {
   margin-bottom: 1rem;
 }
 
-.accordion__item.active button {
-  color: #000;
+.accordion__body {
+  color: #333333;
+  max-width: 55rem;
+  padding: 0 1rem 1rem 2rem;
+  display: none;
 }
 
-.accordion__item.active button::before {
-  color: #002c5d;
-  transform: rotate(-180deg);
+@media (min-width: 1200px) {
+  .accordion__body {
+    font-size: 1.125rem;
+    padding: 0 1.625rem 1.5rem 5.25rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .accordion__body {
+    max-width: 45.3125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .accordion__body {
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
 }
 
 .accordion__title {
@@ -13581,8 +13599,8 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .accordion__title {
-    padding: 1.75rem;
     font-size: 1.25rem;
+    padding: 1.75rem;
   }
 }
 
@@ -13629,84 +13647,100 @@ textarea.form-control {
   }
 }
 
+.accordion__title.active {
+  color: #000;
+}
+
+.accordion__title.active::before {
+  color: #002c5d;
+  transform: rotate(-180deg);
+}
+
 .accordion__title:hover, .accordion__title:focus {
   outline: none;
 }
 
-.accordion__body {
-  color: #333333;
-  max-width: 55rem;
-  padding: 0 1rem 1rem 2rem;
-}
-
-@media (min-width: 1200px) {
-  .accordion__body {
-    font-size: 1.125rem;
-    padding: 0 1.625rem 1.5rem 5.25rem;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  .accordion__body {
-    max-width: 45.3125rem;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .accordion__body {
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-  }
-}
-
 .card-services {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  min-height: 380px;
+  justify-content: center;
+  padding: 2.875rem 1.125rem;
   height: 100%;
-  justify-content: centers;
+  border-radius: .3125rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .card-services {
+    padding: 3.875rem 1.125rem;
+  }
+}
+
+.card-services .row {
+  margin: 0 -0.6875rem;
+}
+
+.card-services [class*="col-"] {
+  padding: 0 0.6875rem;
 }
 
 .card-services__media img {
   border-radius: 5px;
 }
 
-.card-services__desc {
+.card-services-block > .row {
+  margin: 0 -0.5rem;
+}
+
+.card-services-block > .row > [class*="col-"] {
+  padding: 0 0.5rem;
+  margin-bottom: 1.5625rem;
+}
+
+.card-services__info {
   color: #fff;
+  line-height: 1.5;
   font-size: 0.875rem;
 }
 
-@media (min-width: 992px) {
-  .card-services__desc {
-    padding-left: .6875rem;
-    padding-right: 1.375rem;
-  }
-}
-
 @media (max-width: 991.98px) {
-  .card-services__desc {
+  .card-services__info {
     text-align: center;
   }
 }
 
-.card-services__desc .btn-wrap a {
+.card-services__info .btn-wrap a {
   color: #fff;
+  text-transform: capitalize;
   overflow: hidden;
   transition: all .3s;
+  font-weight: 700;
 }
 
-.card-services__desc .btn-wrap a i {
+.card-services__info .btn-wrap a i {
   margin-left: .5rem;
   vertical-align: middle;
 }
 
-.card-services--image {
-  padding-left: 1.125rem;
-  padding-right: .6875rem;
+.card-services--alt {
+  text-align: center;
 }
 
-.card-services--content {
-  flex-direction: column;
+@media (min-width: 768px) {
+  .card-services--alt {
+    padding: 3.875rem 0 1.625rem;
+  }
+}
+
+.card-services--alt .row {
+  padding: 0 0.9375rem;
+}
+
+.card-services--alt .card-services__media, .card-services--alt .card-services__info {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .card-video {
@@ -14382,6 +14416,46 @@ textarea.form-control {
   border-bottom-left-radius: 0;
 }
 
+.media-frame {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.media-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #02c9b8;
+  z-index: -1;
+}
+
+.media-frame--btmLeft {
+  padding: 0 0 .625rem .625rem;
+}
+
+@media (min-width: 768px) {
+  .media-frame--btmLeft {
+    padding: 0 0 17px 17px;
+  }
+}
+
+.media-frame--btmLeft::before {
+  top: 20px;
+  right: 20px;
+}
+
+.info-title__desc h2 {
+  color: #223243;
+}
+
+.info-title__media img {
+  border-radius: 50%;
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -14567,6 +14641,23 @@ textarea.form-control {
   .success-stories .container {
     max-width: 1202px;
   }
+}
+
+.sec-newsletter form {
+  max-width: 36.5rem;
+  margin: 0 auto;
+}
+
+.sec-newsletter form .form-group {
+  position: relative;
+}
+
+.sec-newsletter form .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: .3rem;
 }
 
 .footer-item {

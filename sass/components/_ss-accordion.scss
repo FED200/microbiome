@@ -7,16 +7,26 @@
         border-radius: 5px;
         margin-bottom: 1rem;
 
-        &.active {
+    }
 
-            button {
-                color: $black;
+    &__body {
+        color: $dark-gray-1;
+        max-width: 55rem;
+        padding: 0 1rem 1rem 2rem;
+        display: none;
 
-                &::before {
-                    color: $dark-blue;
-                    transform: rotate(-180deg);
-                }
-            }
+        @include media-breakpoint-up(xl) {
+            @include font-size(1.125rem);
+            padding: 0 1.625rem 1.5rem 5.25rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            max-width: 45.3125rem;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
         }
     }
 
@@ -31,8 +41,8 @@
         position: relative;
 
         @include media-breakpoint-up(lg) {
-            padding: 1.75rem;
             @include font-size(1.25rem);
+            padding: 1.75rem;
         }
 
         @include media-breakpoint-down(xs) {
@@ -72,29 +82,19 @@
             }
         }
 
+        &.active {
+            color: $black;
+
+            &::before {
+                color: $dark-blue;
+                transform: rotate(-180deg);
+            }
+        }
+
         &:hover,
         &:focus {
             outline: none;
         }
-    }
 
-    &__body {
-        color: $dark-gray-1;
-        max-width: 55rem;
-        padding: 0 1rem 1rem 2rem;
-
-        @include media-breakpoint-up(xl) {
-            @include font-size(1.125rem);
-            padding: 0 1.625rem 1.5rem 5.25rem;
-        }
-
-        @include media-breakpoint-down(lg) {
-            max-width: 45.3125rem;
-        }
-
-        @include media-breakpoint-down(xs) {
-            padding-bottom: 0.5rem;
-            padding-left: 1rem;
-        }
     }
 }
