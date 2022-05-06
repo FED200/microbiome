@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
-    <title>Microbiome</title>
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<title>Microbiome</title>
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap"
@@ -12,608 +14,78 @@
 	<link rel="stylesheet" href="vendors/slick/slick.css">
 	<link rel="stylesheet" href="vendors/fancybox/jquery.fancybox.min.css">
 
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header id="header" class="site-header pb-3">
-	<nav class="site-nav">
-		
-	</nav> <!-- / .site-nav -->
+	<header id="header" class="site-header pb-3">
+		<nav class="site-nav">
 
-	<div class="phone-number">
-		<a href="tel:"></a>
-	</div> <!-- / .phone-number -->
+		</nav> <!-- / .site-nav -->
 
-</header> <!-- / .site-header -->
+		<div class="phone-number">
+			<a href="tel:"></a>
+		</div> <!-- / .phone-number -->
 
-<main id="main" class="site-content">
-	<div class="container">
-		<h2>.card-overlay</h2>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 1</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<!-- <div class="btn-wrap"> -->
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						<!-- </div> -->
-					</div>
-				</div> <!-- / .card-overlay -->
-			</div>
+	</header> <!-- / .site-header -->
 
-			<div class="col-lg-4">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5">Gastroesophageal Reflux Disease (GERD)</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<h3 class="h5 mb-2 text-white">Gastroesophageal Reflux Disease (GERD)</h3>
-						<!-- <div class="btn-wrap"> -->
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						<!-- </div> -->
-					</div>
-				</div> <!-- / .card-media -->
-			</div>
-		</div>
-		<hr>
-		<hr>
-		<h2>.card-overlay.card-overlay--alt</h2>
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 2</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<h3 class="h5 mb-2 text-white">Gastroesophageal Reflux Disease (GERD)</h3>
-						<!-- <div class="btn-wrap"> -->
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						<!-- </div> -->
-					</div>
-				</div> <!-- / .card-media -->
-			</div>
-		</div>
-		<hr>
-		<hr>
-		<h2>.card-product</h2>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="card-product text-center">
-					<picture>
-						<source srcset="assets/images/product01.webp" type="image/webp">
-						<source srcset="assets/images/product01.png" type="image/png">
-						<img src="assets/images/product01.png" width="150" height="286" loading="lazy"
-							alt="Product image">
-					</picture>
-					<div class="card-product__body mt-1">
-						<p>Immune Supplement</p>
-						<h3 class="h5">MegaViron&trade;</h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="card-product text-center">
-					<picture>
-						<source srcset="assets/images/product01.webp" type="image/webp">
-						<source srcset="assets/images/product01.png" type="image/png">
-						<img src="assets/images/product01.png" width="150" height="286" loading="lazy"
-							alt="Product image">
-					</picture>
-					<div class="card-product__body mt-1">
-						<h3 class="h5">ION* Complete Health Bundle</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<hr>
-		<h2>.card-product.card-product--alt</h2>
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="card-product card-product--alt text-center">
-					<picture>
-						<source srcset="assets/images/skin-product01.webp" type="image/webp">
-						<source srcset="assets/images/skin-product01.png" type="image/png">
-						<img src="assets/images/skin-product01.png" width="150" height="286" loading="lazy"
-							alt="Product image">
-					</picture>
-					<div class="card-product__body">
-						<h3>ION* Complete Health Bundle</h3>
-						<p>Immune Supplement</p>
-						<span class="price">$89.00</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="card-product card-product--alt text-center">
-					<picture>
-						<source srcset="assets/images/skin-product02.webp" type="image/webp">
-						<source srcset="assets/images/skin-product02.png" type="image/png">
-						<img src="assets/images/skin-product02.png" width="150" height="286" loading="lazy"
-							alt="Product image">
-					</picture>
-					<div class="card-product__body">
-						<h3>ION* Complete Health Bundle</h3>
-						<p>Immune Supplement</p>
-						<span class="price">$89.00</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<hr>
-		<h2>.info-card</h2>
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="info-card bg-cover">
-					<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380" loading="lazy">
-					<div class="row no-gutters">
-						<div class="col-lg-6">
-							<picture class="info-card__media">
-								<source srcset="assets/images/service01.webp" type="image/webp">
-								<source srcset="assets/images/service01.jpg" type="image/jpg">
-								<img src="assets/images/service01.jpg" width="321" height="381" loading="lazy" alt="Service image">
-							</picture> <!-- / .info-card__media -->
-						</div>
-						<div class="col-lg-6">
-							<div class="info-card__content blue-overlay">
-								<h3 class="h5 mb-1">Consultation</h3>
-								<p>Explore our state of the art supplements to rebalance your GUT microbiome and optimize your digestion.</p>
-								<div class="btn-wrap mt-5">
-									<a href="#" class="btn btn-primary btn-primary--alt">Learn more</a>
-								</div>
-							</div> <!-- / .info-card__content -->
-						</div>
-					</div>
-				</div> <!-- / .info-card -->
-			</div>
-		</div>
-		<hr>
-		<hr>
-		<h2>.form-block.form-block--alt</h2>
-		<div class="form-block form-block--alt">					
-			<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
-				<div class="form-header">
-					<div class="section-title text-center mb-xl-3 mb-2">
-						<h2>Do You Have Any Questions?</h1>
-					</div><!-- / .section-title-->
-				</div>
-
-				<div class="form-section-0">
-					<div class="row gutter-md">
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="">Name*</label>
-								<input class="form-control" placeholder="Enter your name here... "
-									name="first-name" type="text" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="">Email*</label>
-								<input class="form-control" placeholder="Email address here..."
-									name="email" type="email" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="form-group">
-								<label for="">Phone number</label>
-								<input class="form-control" placeholder="Enter your contact number"
-									name="phone-number" type="text" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="">Message</label>
-						<textarea class="form-control" placeholder="Your message..."
-							name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
-						<div class="messages"></div>
-					</div>
-				</div>
-				<div class="form-footer mt-xl-3 mt-lg-2 mt-1 text-center">
-					<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
-						Submit
-					</button>
-				</div>
-			</form>
-		</div> <!-- / .form-block.form-block--alt -->
-		<hr>
-		<hr>
-		<h2>.form-block.form-block--bg</h2>
-		<div class="form-block form-block--bg blue-gradient bg-cover">
-			<img src="assets/images/form-bg.jpg" alt="Form image" width="1440" height="647" loading="lazy">					
-			<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
-				<div class="form-header">
-					<div class="section-title text-white text-center">
-						<h2><span>Consultation</span>Connect With Us</h1>
-					</div><!-- / .section-title-->
-				</div>
-
-				<div class="form-section-0">
-					<div class="row gutter-lg">
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Name*</label>
-								<input class="form-control" placeholder="Enter your name here... "
-									name="first-name" type="text" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Email*</label>
-								<input class="form-control" placeholder="Email address here..."
-									name="email" type="email" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Phone number</label>
-								<input class="form-control" placeholder="Enter your contact number"
-									name="phone-number" type="text" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">What is your gender?*</label>
-								<select class="form-control  advanced-select2 " name="services"
-									id="Z1Q7u" data-placeholder="Select Placeholder">
-									<option value="">Please Select</option>
-									<option value="Option One">Option One [Change Me]</option>
-									<option value="Option Two">Option Two [Change Me]</option>
-								</select>
-								<!-- Add more options if needed -->
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Patient date of birth</label>
-								<input class="form-control" placeholder="Email date of birth here..."
-									name="date" type="text" value="">
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Are you a practitioner or a patient?*</label>
-								<select class="form-control  advanced-select2 " name="services"
-									id="Z1Q7u" data-placeholder="Select Placeholder">
-									<option value="">Please Select</option>
-									<option value="Option One">Option One [Change Me]</option>
-									<option value="Option Two">Option Two [Change Me]</option>
-								</select>
-								<!-- Add more options if needed -->
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="form-group">
-								<label for="">Location</label>
-								<select class="form-control  advanced-select2 " name="services"
-									id="Z1Q7u" data-placeholder="Select Placeholder">
-									<option value="">Please Select</option>
-									<option value="Option One">Option One [Change Me]</option>
-									<option value="Option Two">Option Two [Change Me]</option>
-								</select>
-								<!-- Add more options if needed -->
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="col-lg-8 col-md-6">
-							<div class="form-group">
-								<label for="">Message</label>
-								<textarea class="form-control" placeholder="Your message..."
-									name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
-								<div class="messages"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="form-footer mt-1 text-center">
-					<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
-						Submit Form
-					</button>
-				</div>
-			</form>
-		</div> <!-- / .form-block.form-block-bg -->
-		<hr>
-		<hr>
-		<h2>.form-block.form-block--login</h2>
-		<div class="form-block form-block--login">		
-			<div class="row">
-				<div class="col-lg-4"></div>
-				<div class="col-lg-8">
-					<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
-
-						<div class="form-section-0">
-							<div class="row gutter-md">
-								<div class="col-md-4">
-									<div class="form-group">
-										<label for="">Email Address or Username</label>
-										<input class="form-control" placeholder="Enter your name here... "
-											name="first-name" type="text" value="">
-										<div class="messages"></div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label for="">Email*</label>
-										<input class="form-control" placeholder="Email address here..."
-											name="email" type="email" value="">
-										<div class="messages"></div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label for="">Phone number</label>
-										<input class="form-control" placeholder="Enter your contact number"
-											name="phone-number" type="text" value="">
-										<div class="messages"></div>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="">Message</label>
-								<textarea class="form-control" placeholder="Your message..."
-									name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
-								<div class="messages"></div>
-							</div>
-						</div>
-						<div class="form-footer mt-xl-3 mt-lg-2 mt-1 text-center">
-							<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
-								Submit
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>			
-		</div> <!-- / .form-block.form-block--login -->
-	</div>
-
-	<h2>.testimonial-wrap</h2>
-	<section class="testimonial-block bg-cover">
-		<img src="assets/images/review-bg.jpg" alt="Review image" width="1444" height="573" loading="lazy">
-		<div class="row no-gutters">
-			<div class="offset-lg-6 col-lg-6">
-				<div class="testimonial-slider product-slider slider-col-1">
-					<div class="testimonial-item">
-						<blockquote class="blockquote-card text-white">
-							<i class="icon-format-quote"></i>
-							<small>Testimonials</small>
-							<q>Nemo enim ipsam uptatem vosit aspernatur autdit auting to fit.</q>
-							<address class="author">
-								<cite class="author-info">
-									<h3 class="h5">Dr Johnathan Smith</h3>
-									<p>Chief Medical Officer</p>
-								</cite>
-							</address>
-						</blockquote>
-					</div>
-					<div class="testimonial-item">
-						<blockquote class="blockquote-card text-white">
-							<i class="icon-format-quote"></i>
-							<small>Testimonials</small>
-							<q>Nemo enim ipsam uptatem vosit aspernatur autdit auting to fit.</q>
-							<address class="author">
-								<cite class="author-info">
-									<h3 class="h5">Dr Johnathan Smith</h3>
-									<p>Chief Medical Officer</p>
-								</cite>
-							</address>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<h2>.card-overlay-wrap</h2>
-	<section class="story">
-		<div class="row no-gutters">
-			<div class="col-lg-3 col-sm-6">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 1</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-					</div>
-				</div> <!-- / .card-overlay -->
-			</div>
-			<div class="col-lg-3 col-sm-6">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/story02.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 2</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-					</div>
-				</div> <!-- / .card-overlay -->
-			</div>
-			<div class="col-lg-3 col-sm-6">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/story03.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 3</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-					</div>
-				</div> <!-- / .card-overlay -->
-			</div>
-			<div class="col-lg-3 col-sm-6">
-				<div class="card-overlay bg-cover">
-					<img src="assets/images/story04.jpg" width="360" height="414" loading="lazy"
-							alt="Story image">
-					<div class="card-overlay__title">
-						<h3 class="h5 mb-0">Story 4</h3>
-					</div> <!-- / .card-overlay__title -->
-					<div class="card-overlay__text">
-						<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-					</div>
-				</div> <!-- / .card-overlay -->
-			</div>
-		</div>
-	</section> <!-- / .story -->
-	<hr>
-	<hr>
-	<h2>.card-overlay-wrap</h2>
-	<section class="story">
+	<main id="main" class="site-content">
 		<div class="container">
-			<div class="row gutter-sm">
-				<div class="col-lg-4 col-md-6 mb-1">
+			<h2>.card-overlay</h2>
+			<div class="row">
+				<div class="col-lg-3">
 					<div class="card-overlay bg-cover">
-						<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
+						<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 1</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<!-- <div class="btn-wrap"> -->
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							<!-- </div> -->
+						</div>
+					</div> <!-- / .card-overlay -->
+				</div>
+
+				<div class="col-lg-4">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy" alt="Story image">
 						<div class="card-overlay__title">
 							<h3 class="h5">Gastroesophageal Reflux Disease (GERD)</h3>
 						</div> <!-- / .card-overlay__title -->
 						<div class="card-overlay__text">
 							<h3 class="h5 mb-2 text-white">Gastroesophageal Reflux Disease (GERD)</h3>
+							<!-- <div class="btn-wrap"> -->
 							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							<!-- </div> -->
 						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/pud.jpg" width="358" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Peptic Ulcer Disease (PUD) and Gastritis</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Peptic Ulcer Disease (PUD) and Gastritis</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/sibo.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">SIBO</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">SIBO</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/gluten.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Gluten Sensitivity and Celiac Disease</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Gluten Sensitivity and Celiac Disease</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/crohns.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Crohn’s Disease</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Crohn’s Disease</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/ibs.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Irritable Bowel Syndrome (IBS)</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Irritable Bowel Syndrome (IBS)</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/ibd.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Irritabkle Bowel Disease (IBD)</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Irritabkle Bowel Disease (IBD)</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6 mb-1">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/constipation.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Constipation</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Constipation</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="card-overlay bg-cover">
-						<img src="assets/images/leaky-gut.jpg" width="360" height="414" loading="lazy"
-								alt="Story image">
-						<div class="card-overlay__title">
-							<h3 class="h5">Leaky Gut</h3>
-						</div> <!-- / .card-overlay__title -->
-						<div class="card-overlay__text">
-							<h3 class="h5 mb-2 text-white">Leaky Gut</h3>
-							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
-						</div>
-					</div> <!-- / .card-overlay -->
+					</div> <!-- / .card-media -->
 				</div>
 			</div>
-
-			<div class="btn-wrap text-center mt-xl-4 mt-lg-3 mt-2">
-				<a href="#" class="btn btn-primary">Load more</a>
+			<hr>
+			<hr>
+			<h2>.card-overlay.card-overlay--alt</h2>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 2</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<h3 class="h5 mb-2 text-white">Gastroesophageal Reflux Disease (GERD)</h3>
+							<!-- <div class="btn-wrap"> -->
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							<!-- </div> -->
+						</div>
+					</div> <!-- / .card-media -->
+				</div>
 			</div>
-		</div>
-	</section> <!-- / .story -->
-	<hr>
-	<hr>
-	<h2>.product-wrap</h2>
-	<section class="product">
-		<div class="container">
-			<div class="section-title text-center mb-2">
-				<h2><span>Products</span>Featured</h2>
-			</div>
-			<div class="product-slider slider-col-4">
-				<div class="product-item">
+			<hr>
+			<hr>
+			<h2>.card-product</h2>
+			<div class="row">
+				<div class="col-lg-3">
 					<div class="card-product text-center">
 						<picture>
 							<source srcset="assets/images/product01.webp" type="image/webp">
@@ -626,194 +98,79 @@
 							<h3 class="h5">MegaViron&trade;</h3>
 						</div>
 					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/product02.webp" type="image/webp">
-							<source srcset="assets/images/product02.png" type="image/png">
-							<img src="assets/images/product02.png" width="145" height="287" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<p>Immune Supplement</p>
-							<h3 class="h5">MegaViron&trade;</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/product03.webp" type="image/webp">
-							<source srcset="assets/images/product03.png" type="image/png">
-							<img src="assets/images/product03.png" width="136" height="283" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<p>Immune Supplement</p>
-							<h3 class="h5">MegaViron&trade;</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/product04.webp" type="image/webp">
-							<source srcset="assets/images/product04.png" type="image/png">
-							<img src="assets/images/product04.png" width="149" height="289" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<p>Immune Supplement</p>
-							<h3 class="h5">MegaViron&trade;</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
+				</div>
+				<div class="col-lg-3">
 					<div class="card-product text-center">
 						<picture>
 							<source srcset="assets/images/product01.webp" type="image/webp">
 							<source srcset="assets/images/product01.png" type="image/png">
 							<img src="assets/images/product01.png" width="150" height="286" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<p>Immune Supplement</p>
-							<h3 class="h5">MegaViron&trade;</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-			</div>
-			<div class="btn-wrap text-center mt-xl-3 mt-2">
-				<a href="#" class="btn btn-primary">view all products</a>
-			</div>
-		</div>
-	</section> <!-- / .product -->
-	<hr>
-	<hr>
-	<h2>.product-wrap</h2>
-	<section class="product">
-		<div class="container">
-			<div class="section-title text-center mb-2">
-				<h2><span>Products</span>Featured</h2>
-			</div>
-			<div class="product-slider slider-col-4">
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/skin-product01.webp" type="image/webp">
-							<source srcset="assets/images/skin-product01.png" type="image/png">
-							<img src="assets/images/skin-product01.png" width="247" height="247" loading="lazy"
 								alt="Product image">
 						</picture>
 						<div class="card-product__body mt-1">
 							<h3 class="h5">ION* Complete Health Bundle</h3>
 						</div>
 					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
+				</div>
+			</div>
+			<hr>
+			<hr>
+			<h2>.card-product.card-product--alt</h2>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="card-product card-product--alt text-center">
+						<picture>
+							<source srcset="assets/images/skin-product01.webp" type="image/webp">
+							<source srcset="assets/images/skin-product01.png" type="image/png">
+							<img src="assets/images/skin-product01.png" width="150" height="286" loading="lazy"
+								alt="Product image">
+						</picture>
+						<div class="card-product__body">
+							<h3>ION* Complete Health Bundle</h3>
+							<p>Immune Supplement</p>
+							<span class="price">$89.00</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="card-product card-product--alt text-center">
 						<picture>
 							<source srcset="assets/images/skin-product02.webp" type="image/webp">
 							<source srcset="assets/images/skin-product02.png" type="image/png">
-							<img src="assets/images/skin-product02.png" width="75" height="239" loading="lazy"
+							<img src="assets/images/skin-product02.png" width="150" height="286" loading="lazy"
 								alt="Product image">
 						</picture>
-						<div class="card-product__body mt-1">
-							<h3 class="h5">ION* Skin Support</h3>
+						<div class="card-product__body">
+							<h3>ION* Complete Health Bundle</h3>
+							<p>Immune Supplement</p>
+							<span class="price">$89.00</span>
 						</div>
 					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/skin-product03.webp" type="image/webp">
-							<source srcset="assets/images/skin-product03.png" type="image/png">
-							<img src="assets/images/skin-product03.png" width="134" height="238" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<h3 class="h5">ION* Sinus Support</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/skin-product04.webp" type="image/webp">
-							<source srcset="assets/images/skin-product04.png" type="image/png">
-							<img src="assets/images/skin-product04.png" width="168" height="251" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<h3 class="h5">ION* Gut Support For Pets</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
-				<div class="product-item">
-					<div class="card-product text-center">
-						<picture>
-							<source srcset="assets/images/skin-product01.webp" type="image/webp">
-							<source srcset="assets/images/skin-product01.png" type="image/png">
-							<img src="assets/images/skin-product01.png" width="247" height="247" loading="lazy"
-								alt="Product image">
-						</picture>
-						<div class="card-product__body mt-1">
-							<h3 class="h5">ION* Complete Health Bundle</h3>
-						</div>
-					</div>
-				</div> <!-- / .product-item -->
+				</div>
 			</div>
-			<div class="btn-wrap text-center mt-xl-3 mt-2">
-				<a href="#" class="btn btn-primary">view all products</a>
-			</div>
-		</div>
-	</section> <!-- / .product -->
-	<hr>
-	<hr>
-	<h2>.info-card-wrap</h2>
-	<section class="service">
-		<div class="container">
+			<hr>
+			<hr>
+			<h2>.info-card</h2>
 			<div class="row">
-				<div class="col-md-6 mb-md-0 mb-1">
+				<div class="col-lg-6">
 					<div class="info-card bg-cover">
-						<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380" loading="lazy">
+						<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380"
+							loading="lazy">
 						<div class="row no-gutters">
 							<div class="col-lg-6">
 								<picture class="info-card__media">
 									<source srcset="assets/images/service01.webp" type="image/webp">
 									<source srcset="assets/images/service01.jpg" type="image/jpg">
-									<img src="assets/images/service01.jpg" width="321" height="381" loading="lazy" alt="Service image">
+									<img src="assets/images/service01.jpg" width="321" height="381" loading="lazy"
+										alt="Service image">
 								</picture> <!-- / .info-card__media -->
 							</div>
 							<div class="col-lg-6">
 								<div class="info-card__content blue-overlay">
 									<h3 class="h5 mb-1">Consultation</h3>
-									<p>Explore our state of the art supplements to rebalance your GUT microbiome and optimize your digestion.</p>
-									<div class="btn-wrap mt-xxl-5 mt-xl-4 mt-lg-3 mt-1">
-										<a href="#" class="btn btn-primary btn-primary--alt">Learn more</a>
-									</div>
-								</div> <!-- / .info-card__content -->
-							</div>
-						</div>
-					</div> <!-- / .info-card -->
-				</div>
-				<div class="col-md-6">
-					<div class="info-card bg-cover">
-						<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380" loading="lazy">
-						<div class="row no-gutters">
-							<div class="col-lg-6">
-								<picture class="info-card__media">
-									<source srcset="assets/images/service02.webp" type="image/webp">
-									<source srcset="assets/images/service02.jpg" type="image/jpg">
-									<img src="assets/images/service02.jpg" width="321" height="381" loading="lazy" alt="Service image">
-								</picture> <!-- / .info-card__media -->
-							</div>
-							<div class="col-lg-6">
-								<div class="info-card__content cyan-overlay">
-									<h3 class="h5 mb-1">Consultation</h3>
-									<p>Explore our state of the art supplements to rebalance your GUT microbiome and optimize your digestion.</p>
-									<div class="btn-wrap mt-xxl-5 mt-xl-4 mt-lg-3 mt-1">
+									<p>Explore our state of the art supplements to rebalance your GUT microbiome and
+										optimize your digestion.</p>
+									<div class="btn-wrap mt-5">
 										<a href="#" class="btn btn-primary btn-primary--alt">Learn more</a>
 									</div>
 								</div> <!-- / .info-card__content -->
@@ -822,26 +179,670 @@
 					</div> <!-- / .info-card -->
 				</div>
 			</div>
+			<hr>
+			<hr>
+			<h2>.form-block.form-block--alt</h2>
+			<div class="form-block form-block--alt">
+				<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
+					<div class="form-header">
+						<div class="section-title text-center mb-xl-3 mb-2">
+							<h2>Do You Have Any Questions?</h1>
+						</div><!-- / .section-title-->
+					</div>
+
+					<div class="form-section-0">
+						<div class="row gutter-md">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="">Name*</label>
+									<input class="form-control" placeholder="Enter your name here... " name="first-name"
+										type="text" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="">Email*</label>
+									<input class="form-control" placeholder="Email address here..." name="email"
+										type="email" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label for="">Phone number</label>
+									<input class="form-control" placeholder="Enter your contact number"
+										name="phone-number" type="text" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="">Message</label>
+							<textarea class="form-control" placeholder="Your message..."
+								name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+							<div class="messages"></div>
+						</div>
+					</div>
+					<div class="form-footer mt-xl-3 mt-lg-2 mt-1 text-center">
+						<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
+							Submit
+						</button>
+					</div>
+				</form>
+			</div> <!-- / .form-block.form-block--alt -->
+			<hr>
+			<hr>
+			<h2>.form-block.form-block--bg</h2>
+			<div class="form-block form-block--bg blue-gradient bg-cover">
+				<img src="assets/images/form-bg.jpg" alt="Form image" width="1440" height="647" loading="lazy">
+				<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
+					<div class="form-header">
+						<div class="section-title text-white text-center">
+							<h2><span>Consultation</span>Connect With Us</h1>
+						</div><!-- / .section-title-->
+					</div>
+
+					<div class="form-section-0">
+						<div class="row gutter-lg">
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Name*</label>
+									<input class="form-control" placeholder="Enter your name here... " name="first-name"
+										type="text" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Email*</label>
+									<input class="form-control" placeholder="Email address here..." name="email"
+										type="email" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Phone number</label>
+									<input class="form-control" placeholder="Enter your contact number"
+										name="phone-number" type="text" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">What is your gender?*</label>
+									<select class="form-control  advanced-select2 " name="services" id="Z1Q7u"
+										data-placeholder="Select Placeholder">
+										<option value="">Please Select</option>
+										<option value="Option One">Option One [Change Me]</option>
+										<option value="Option Two">Option Two [Change Me]</option>
+									</select>
+									<!-- Add more options if needed -->
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Patient date of birth</label>
+									<input class="form-control" placeholder="Email date of birth here..." name="date"
+										type="text" value="">
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Are you a practitioner or a patient?*</label>
+									<select class="form-control  advanced-select2 " name="services" id="Z1Q7u"
+										data-placeholder="Select Placeholder">
+										<option value="">Please Select</option>
+										<option value="Option One">Option One [Change Me]</option>
+										<option value="Option Two">Option Two [Change Me]</option>
+									</select>
+									<!-- Add more options if needed -->
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<div class="form-group">
+									<label for="">Location</label>
+									<select class="form-control  advanced-select2 " name="services" id="Z1Q7u"
+										data-placeholder="Select Placeholder">
+										<option value="">Please Select</option>
+										<option value="Option One">Option One [Change Me]</option>
+										<option value="Option Two">Option Two [Change Me]</option>
+									</select>
+									<!-- Add more options if needed -->
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="col-lg-8 col-md-6">
+								<div class="form-group">
+									<label for="">Message</label>
+									<textarea class="form-control" placeholder="Your message..."
+										name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+									<div class="messages"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-footer mt-1 text-center">
+						<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
+							Submit Form
+						</button>
+					</div>
+				</form>
+			</div> <!-- / .form-block.form-block-bg -->
+			<hr>
+			<hr>
+			<h2>.form-block.form-block--login</h2>
+			<div class="form-block form-block--login">
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-8">
+						<form method="POST" action="mailer/index.php" id="form-id-1" class="validate form">
+
+							<div class="form-section-0">
+								<div class="row gutter-md">
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="">Email Address or Username</label>
+											<input class="form-control" placeholder="Enter your name here... "
+												name="first-name" type="text" value="">
+											<div class="messages"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="">Email*</label>
+											<input class="form-control" placeholder="Email address here..." name="email"
+												type="email" value="">
+											<div class="messages"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-group">
+											<label for="">Phone number</label>
+											<input class="form-control" placeholder="Enter your contact number"
+												name="phone-number" type="text" value="">
+											<div class="messages"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">Message</label>
+									<textarea class="form-control" placeholder="Your message..."
+										name="what-should-we-know-to-help-you" cols="50" rows="10"></textarea>
+									<div class="messages"></div>
+								</div>
+							</div>
+							<div class="form-footer mt-xl-3 mt-lg-2 mt-1 text-center">
+								<button type="submit" class="submitButton btn btn-primary btn-primary--cyan">
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div> <!-- / .form-block.form-block--login -->
 		</div>
-	</section> <!-- / .service -->
-</main> <!-- / .site-content -->
 
-<footer id="footer" class="site-footer">
-	
-</footer> <!-- / .site-footer -->
+		<h2>.testimonial-wrap</h2>
+		<section class="testimonial-block bg-cover">
+			<img src="assets/images/review-bg.jpg" alt="Review image" width="1444" height="573" loading="lazy">
+			<div class="row no-gutters">
+				<div class="offset-lg-6 col-lg-6">
+					<div class="testimonial-slider product-slider slider-col-1">
+						<div class="testimonial-item">
+							<blockquote class="blockquote-card text-white">
+								<i class="icon-format-quote"></i>
+								<small>Testimonials</small>
+								<q>Nemo enim ipsam uptatem vosit aspernatur autdit auting to fit.</q>
+								<address class="author">
+									<cite class="author-info">
+										<h3 class="h5">Dr Johnathan Smith</h3>
+										<p>Chief Medical Officer</p>
+									</cite>
+								</address>
+							</blockquote>
+						</div>
+						<div class="testimonial-item">
+							<blockquote class="blockquote-card text-white">
+								<i class="icon-format-quote"></i>
+								<small>Testimonials</small>
+								<q>Nemo enim ipsam uptatem vosit aspernatur autdit auting to fit.</q>
+								<address class="author">
+									<cite class="author-info">
+										<h3 class="h5">Dr Johnathan Smith</h3>
+										<p>Chief Medical Officer</p>
+									</cite>
+								</address>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<h2>.card-overlay-wrap</h2>
+		<section class="story">
+			<div class="row no-gutters">
+				<div class="col-lg-3 col-sm-6">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/story01.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 1</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+						</div>
+					</div> <!-- / .card-overlay -->
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/story02.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 2</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+						</div>
+					</div> <!-- / .card-overlay -->
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/story03.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 3</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+						</div>
+					</div> <!-- / .card-overlay -->
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="card-overlay bg-cover">
+						<img src="assets/images/story04.jpg" width="360" height="414" loading="lazy" alt="Story image">
+						<div class="card-overlay__title">
+							<h3 class="h5 mb-0">Story 4</h3>
+						</div> <!-- / .card-overlay__title -->
+						<div class="card-overlay__text">
+							<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+						</div>
+					</div> <!-- / .card-overlay -->
+				</div>
+			</div>
+		</section> <!-- / .story -->
+		<hr>
+		<hr>
+		<h2>.card-overlay-wrap</h2>
+		<section class="story">
+			<div class="container">
+				<div class="row gutter-sm">
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/gerd.jpg" width="360" height="414" loading="lazy" alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Gastroesophageal Reflux Disease (GERD)</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Gastroesophageal Reflux Disease (GERD)</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/pud.jpg" width="358" height="414" loading="lazy" alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Peptic Ulcer Disease (PUD) and Gastritis</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Peptic Ulcer Disease (PUD) and Gastritis</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/sibo.jpg" width="360" height="414" loading="lazy" alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">SIBO</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">SIBO</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/gluten.jpg" width="360" height="414" loading="lazy"
+								alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Gluten Sensitivity and Celiac Disease</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Gluten Sensitivity and Celiac Disease</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/crohns.jpg" width="360" height="414" loading="lazy"
+								alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Crohn’s Disease</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Crohn’s Disease</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/ibs.jpg" width="360" height="414" loading="lazy" alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Irritable Bowel Syndrome (IBS)</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Irritable Bowel Syndrome (IBS)</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/ibd.jpg" width="360" height="414" loading="lazy" alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Irritabkle Bowel Disease (IBD)</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Irritabkle Bowel Disease (IBD)</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6 mb-1">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/constipation.jpg" width="360" height="414" loading="lazy"
+								alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Constipation</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Constipation</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="card-overlay bg-cover">
+							<img src="assets/images/leaky-gut.jpg" width="360" height="414" loading="lazy"
+								alt="Story image">
+							<div class="card-overlay__title">
+								<h3 class="h5">Leaky Gut</h3>
+							</div> <!-- / .card-overlay__title -->
+							<div class="card-overlay__text">
+								<h3 class="h5 mb-2 text-white">Leaky Gut</h3>
+								<a href="#" class="btn btn-sm btn-sm--alt">learn more</a>
+							</div>
+						</div> <!-- / .card-overlay -->
+					</div>
+				</div>
+
+				<div class="btn-wrap text-center mt-xl-4 mt-lg-3 mt-2">
+					<a href="#" class="btn btn-primary">Load more</a>
+				</div>
+			</div>
+		</section> <!-- / .story -->
+		<hr>
+		<hr>
+		<h2>.product-wrap</h2>
+		<section class="product">
+			<div class="container">
+				<div class="section-title text-center mb-2">
+					<h2><span>Products</span>Featured</h2>
+				</div>
+				<div class="product-slider slider-col-4">
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/product01.webp" type="image/webp">
+								<source srcset="assets/images/product01.png" type="image/png">
+								<img src="assets/images/product01.png" width="150" height="286" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<p>Immune Supplement</p>
+								<h3 class="h5">MegaViron&trade;</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/product02.webp" type="image/webp">
+								<source srcset="assets/images/product02.png" type="image/png">
+								<img src="assets/images/product02.png" width="145" height="287" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<p>Immune Supplement</p>
+								<h3 class="h5">MegaViron&trade;</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/product03.webp" type="image/webp">
+								<source srcset="assets/images/product03.png" type="image/png">
+								<img src="assets/images/product03.png" width="136" height="283" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<p>Immune Supplement</p>
+								<h3 class="h5">MegaViron&trade;</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/product04.webp" type="image/webp">
+								<source srcset="assets/images/product04.png" type="image/png">
+								<img src="assets/images/product04.png" width="149" height="289" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<p>Immune Supplement</p>
+								<h3 class="h5">MegaViron&trade;</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/product01.webp" type="image/webp">
+								<source srcset="assets/images/product01.png" type="image/png">
+								<img src="assets/images/product01.png" width="150" height="286" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<p>Immune Supplement</p>
+								<h3 class="h5">MegaViron&trade;</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+				</div>
+				<div class="btn-wrap text-center mt-xl-3 mt-2">
+					<a href="#" class="btn btn-primary">view all products</a>
+				</div>
+			</div>
+		</section> <!-- / .product -->
+		<hr>
+		<hr>
+		<h2>.product-wrap</h2>
+		<section class="product">
+			<div class="container">
+				<div class="section-title text-center mb-2">
+					<h2><span>Products</span>Featured</h2>
+				</div>
+				<div class="product-slider slider-col-4">
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/skin-product01.webp" type="image/webp">
+								<source srcset="assets/images/skin-product01.png" type="image/png">
+								<img src="assets/images/skin-product01.png" width="247" height="247" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<h3 class="h5">ION* Complete Health Bundle</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/skin-product02.webp" type="image/webp">
+								<source srcset="assets/images/skin-product02.png" type="image/png">
+								<img src="assets/images/skin-product02.png" width="75" height="239" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<h3 class="h5">ION* Skin Support</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/skin-product03.webp" type="image/webp">
+								<source srcset="assets/images/skin-product03.png" type="image/png">
+								<img src="assets/images/skin-product03.png" width="134" height="238" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<h3 class="h5">ION* Sinus Support</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/skin-product04.webp" type="image/webp">
+								<source srcset="assets/images/skin-product04.png" type="image/png">
+								<img src="assets/images/skin-product04.png" width="168" height="251" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<h3 class="h5">ION* Gut Support For Pets</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+					<div class="product-item">
+						<div class="card-product text-center">
+							<picture>
+								<source srcset="assets/images/skin-product01.webp" type="image/webp">
+								<source srcset="assets/images/skin-product01.png" type="image/png">
+								<img src="assets/images/skin-product01.png" width="247" height="247" loading="lazy"
+									alt="Product image">
+							</picture>
+							<div class="card-product__body mt-1">
+								<h3 class="h5">ION* Complete Health Bundle</h3>
+							</div>
+						</div>
+					</div> <!-- / .product-item -->
+				</div>
+				<div class="btn-wrap text-center mt-xl-3 mt-2">
+					<a href="#" class="btn btn-primary">view all products</a>
+				</div>
+			</div>
+		</section> <!-- / .product -->
+		<hr>
+		<hr>
+		<h2>.info-card-wrap</h2>
+		<section class="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 mb-md-0 mb-1">
+						<div class="info-card bg-cover">
+							<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380"
+								loading="lazy">
+							<div class="row no-gutters">
+								<div class="col-lg-6">
+									<picture class="info-card__media">
+										<source srcset="assets/images/service01.webp" type="image/webp">
+										<source srcset="assets/images/service01.jpg" type="image/jpg">
+										<img src="assets/images/service01.jpg" width="321" height="381" loading="lazy"
+											alt="Service image">
+									</picture> <!-- / .info-card__media -->
+								</div>
+								<div class="col-lg-6">
+									<div class="info-card__content blue-overlay">
+										<h3 class="h5 mb-1">Consultation</h3>
+										<p>Explore our state of the art supplements to rebalance your GUT microbiome and
+											optimize your digestion.</p>
+										<div class="btn-wrap mt-xxl-5 mt-xl-4 mt-lg-3 mt-1">
+											<a href="#" class="btn btn-primary btn-primary--alt">Learn more</a>
+										</div>
+									</div> <!-- / .info-card__content -->
+								</div>
+							</div>
+						</div> <!-- / .info-card -->
+					</div>
+					<div class="col-md-6">
+						<div class="info-card bg-cover">
+							<img src="assets/images/service-bg.jpg" alt="Service image" width="620" height="380"
+								loading="lazy">
+							<div class="row no-gutters">
+								<div class="col-lg-6">
+									<picture class="info-card__media">
+										<source srcset="assets/images/service02.webp" type="image/webp">
+										<source srcset="assets/images/service02.jpg" type="image/jpg">
+										<img src="assets/images/service02.jpg" width="321" height="381" loading="lazy"
+											alt="Service image">
+									</picture> <!-- / .info-card__media -->
+								</div>
+								<div class="col-lg-6">
+									<div class="info-card__content cyan-overlay">
+										<h3 class="h5 mb-1">Consultation</h3>
+										<p>Explore our state of the art supplements to rebalance your GUT microbiome and
+											optimize your digestion.</p>
+										<div class="btn-wrap mt-xxl-5 mt-xl-4 mt-lg-3 mt-1">
+											<a href="#" class="btn btn-primary btn-primary--alt">Learn more</a>
+										</div>
+									</div> <!-- / .info-card__content -->
+								</div>
+							</div>
+						</div> <!-- / .info-card -->
+					</div>
+				</div>
+			</div>
+		</section> <!-- / .service -->
+	</main> <!-- / .site-content -->
+
+	<footer id="footer" class="site-footer">
+
+	</footer> <!-- / .site-footer -->
 
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="vendors/slick/slick.min.js"></script>
-<script src="vendors/fancybox/jquery.fancybox.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="vendors/slick/slick.min.js"></script>
+	<script src="vendors/fancybox/jquery.fancybox.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-	integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-</script>
-<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+	</script>
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
