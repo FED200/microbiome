@@ -241,3 +241,43 @@
         }
     }
 }
+
+//post-widget
+.post-widget {
+    display: flex;
+    align-items: center;
+
+    &__media {
+        display: inline-block;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        max-width: 169px;
+
+        h4 {
+            @include font-size(1rem);
+            font-weight: 500;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.25rem);
+            }
+        }
+
+        a {
+            @include font-size(0.875rem);
+            font-weight: 700;
+            color: $dark-blue;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $strong-cyan;
+                text-decoration: none;
+            }
+        }
+    }
+}

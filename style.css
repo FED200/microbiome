@@ -13525,6 +13525,47 @@ textarea.form-control {
   }
 }
 
+.post-widget {
+  display: flex;
+  align-items: center;
+}
+
+.post-widget__media {
+  display: inline-block;
+}
+
+.post-widget__media img {
+  width: 100%;
+}
+
+.post-widget__content {
+  max-width: 169px;
+}
+
+.post-widget__content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .post-widget__content h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.post-widget__content a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #002c5d;
+  transition: all 0.3s;
+}
+
+.post-widget__content a:hover {
+  color: #02c9b8;
+  text-decoration: none;
+}
+
 .cta-block {
   display: flex;
   justify-content: center;
