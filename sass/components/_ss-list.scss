@@ -66,4 +66,85 @@
             }
         }
     }
+
+    &-circle {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style-type: none;
+                @include font-size(1rem);
+                color: $dark-gray-1;
+                font-weight: 600;
+                position: relative;
+                padding-left: 1.3rem;
+                text-transform: capitalize;
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1.125rem);
+                    line-height: 32px;
+                }
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    line-height: 1;
+                    top: 11px;
+                    left: 0;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    border: 2px solid $dark-gray-1;
+                }
+            }
+        }
+    }
+
+    &-focus {
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style-type: none;
+                position: relative;
+                @include font-size(1.125rem);
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $black;
+                padding-left: 2rem;
+                margin-bottom: 1.5rem;
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1.25rem);
+                }
+
+                &:before {
+                    position: absolute;
+                    content: '\e902';
+                    font-family: 'icomoon';
+                    top: 0;
+                    left: 0;
+
+                }
+
+                span {
+                    display: block;
+                    @include font-size(1rem);
+                    color: $dark-gray-1;
+                    text-transform: none;
+                    margin-top: 0.5rem;
+                    line-height: 25px;
+
+
+                    @include media-breakpoint-up(lg) {
+                        @include font-size(18px);
+                        line-height: 32px;
+
+                    }
+                }
+            }
+        }
+    }
 }
