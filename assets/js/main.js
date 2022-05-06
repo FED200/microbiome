@@ -122,4 +122,12 @@ $(document).ready(function () {
         ]
     });
 
+    //slider-col-1
+    $('.slider-col-1').slick({
+      infinite: false,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      slidesToScroll: 1,
+  });
+
 });

@@ -92,6 +92,27 @@ iframe {
 	}
 }
 
+.gutter-md {
+	margin-right: -17px;
+	margin-left: -17px;
+
+	[class*="col-"] {
+		padding-right: 17px;
+		padding-left: 17px;
+	}
+}
+
+.gutter-lg {
+	margin-right: -30px;
+	margin-left: -30px;
+
+	[class*="col-"] {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+
 .w-100 {
 	@include media-breakpoint-down(md) {
 		width: 100%;
@@ -157,5 +178,26 @@ iframe {
 .cyan-overlay {
 	&::before {
 		background: rgba($strong-cyan, 0.9);
+	}
+}
+
+
+.blue-gradient {
+	position: relative;
+	z-index: 1;
+	
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		background: -moz-linear-gradient(left,  rgba(0,44,93,0.95) 0%, rgba(0,44,93,0.95) 1%, rgba(2,28,58,0.95) 100%);
+		background: -webkit-linear-gradient(left,  rgba(0,44,93,0.95) 0%,rgba(0,44,93,0.95) 1%,rgba(2,28,58,0.95) 100%);
+		background: linear-gradient(to right,  rgba(0,44,93,0.95) 0%,rgba(0,44,93,0.95) 1%,rgba(2,28,58,0.95) 100%);
 	}
 }
