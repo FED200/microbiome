@@ -14450,6 +14450,14 @@ textarea.form-control {
 
 .info-title__desc h2 {
   color: #223243;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+@media (max-width: 1199.98px) {
+  .info-title__desc h2 br {
+    display: none;
+  }
 }
 
 .info-title__media img {

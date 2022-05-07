@@ -3,6 +3,14 @@
     &__desc {
         h2 {
             color: $dark-blue-7;
+            text-transform: capitalize;
+            font-weight: 600;
+
+            br {
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
         }
     }
 
