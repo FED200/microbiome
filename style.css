@@ -14668,6 +14668,109 @@ textarea.form-control {
   margin: .3rem;
 }
 
+@media (min-width: 992px) {
+  .tab-block .border-col {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.tab-block__info {
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .tab-block__info {
+    font-size: 1.125rem;
+    line-height: 32px;
+    max-width: 35.3125rem;
+  }
+}
+
+.tab .nav {
+  counter-reset: count;
+}
+
+.tab .nav h4 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.tab .nav-link {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+  transition: all 0.3s;
+  padding: 0.5rem 4rem 0.5rem 1rem;
+}
+
+@media (min-width: 992px) {
+  .tab .nav-link {
+    font-size: 1.125rem;
+    margin-bottom: 1.2rem;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tab .nav-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .tab .nav-link {
+    font-size: calc(1.275rem + 0.3vw) ;
+  }
+}
+
+.tab .nav-link.active {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.tab .nav-link.active i {
+  background-color: #fff;
+  color: #002c5d;
+}
+
+.tab .nav-link:hover i {
+  background-color: #fff;
+  color: #002c5d;
+}
+
+.tab .nav-link span {
+  display: block;
+}
+
+.tab .nav-link span::before {
+  content: counter(count, decimal-leading-zero) ".";
+  counter-increment: count;
+}
+
+.tab .nav-link i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  font-size: 1rem;
+  line-height: 1;
+  width: 34px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
 .footer-item {
   color: #666666;
   font-size: 1rem;
