@@ -4,14 +4,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 450px;
-  
+        min-height: 500px;
+        padding: 5.75rem 1rem;
+
         @include media-breakpoint-up(lg) {
-            min-height: 500px;
+            min-height: 550px;
+            padding: 6.75rem 1rem;
         }
 
         @include media-breakpoint-up(xl) {
             min-height: 592px;
+            padding: 8.875rem 2rem 5rem 2rem;
         }
     }
 
@@ -56,7 +59,8 @@
                 align-items: center;
                 border: 1px solid $strong-cyan;
                 border-radius: 50%;
-                transition: all 0.3s;              
+                transition: all 0.3s;
+
                 &:hover {
                     background-color: $strong-cyan;
                     color: $white;
@@ -119,4 +123,3 @@
         }
     }
 }
-

@@ -1,0 +1,26 @@
+.two-col {
+    &__info {
+        @include font-size(1rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.125rem);
+            line-height: 32px;
+        }
+
+        br {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+
+        a {
+            color: $strong-cyan;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $dark-blue;
+                text-decoration: none;
+            }
+        }
+    }
+}

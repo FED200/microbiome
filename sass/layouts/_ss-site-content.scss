@@ -139,3 +139,10 @@
     }
 
 }
+
+//services
+.services{
+    @include media-breakpoint-down(sm){
+        margin-top: -2.5rem;
+    }
+}

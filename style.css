@@ -12973,18 +12973,21 @@ textarea.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 450px;
+  min-height: 500px;
+  padding: 5.75rem 1rem;
 }
 
 @media (min-width: 992px) {
   .banner-content {
-    min-height: 500px;
+    min-height: 550px;
+    padding: 6.75rem 1rem;
   }
 }
 
 @media (min-width: 1200px) {
   .banner-content {
     min-height: 592px;
+    padding: 8.875rem 2rem 5rem 2rem;
   }
 }
 
@@ -13140,7 +13143,7 @@ textarea.form-control {
 
 @media (max-width: 1199.98px) {
   .banner-slider .slick-arrow {
-    margin: 0rem 0.1rem 2.8rem 0.1rem;
+    margin: 0rem 0.1rem 4.5rem 0.1rem;
   }
 }
 
@@ -13816,12 +13819,6 @@ textarea.form-control {
   font-size: 0.875rem;
 }
 
-@media (max-width: 991.98px) {
-  .card-services__info {
-    text-align: center;
-  }
-}
-
 .card-services__info .btn-wrap a {
   color: #fff;
   text-transform: capitalize;
@@ -13837,6 +13834,12 @@ textarea.form-control {
 
 .card-services--alt {
   text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .card-services--alt {
+    order: -1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -14727,6 +14730,33 @@ textarea.form-control {
   background: transparent linear-gradient(165deg, #002c5d 0%, #02c9b8 100%);
 }
 
+.two-col__info {
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .two-col__info {
+    font-size: 1.125rem;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .two-col__info br {
+    display: none;
+  }
+}
+
+.two-col__info a {
+  color: #02c9b8;
+  transition: all 0.3s;
+}
+
+.two-col__info a:hover {
+  color: #002c5d;
+  text-decoration: none;
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -15032,6 +15062,12 @@ textarea.form-control {
   align-items: center;
   border-radius: 6px;
   transition: all 0.3s;
+}
+
+@media (max-width: 767.98px) {
+  .services {
+    margin-top: -2.5rem;
+  }
 }
 
 .footer-item {
