@@ -29,7 +29,7 @@
                     // outline: 0;
                     border-color: $strong-cyan;
                     background-color: $dark-blue;
-                   
+
                 }
 
                 &:before {
@@ -40,7 +40,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    transition: all 0.3s;                   
+                    transition: all 0.3s;
 
                 }
             }
@@ -94,7 +94,8 @@
             &-slide {
                 height: inherit;
             }
-            &-disabled{
+
+            &-disabled {
                 background-color: rgba($white, 0.60);
             }
         }
@@ -109,17 +110,17 @@
         margin: 0;
         list-style-type: none;
         padding: 0;
-    
+
         li {
             margin: 0 0.25rem;
         }
-    
+
         .slick-active {
-            button{
+            button {
                 background-color: $primary;
             }
         }
-    
+
         button {
             background-color: $gray-400;
             border: 1px solid transparent;
@@ -135,8 +136,8 @@
             transition: .3s ease-in-out;
         }
     }
-    
-    
+
+
     .slick {
         &-arrow {
             font-size: 0;
@@ -147,19 +148,19 @@
             position: absolute;
             z-index: 5;
             transition: all .2s;
-            top: 50%; 
+            top: 50%;
             transform: translateY(-50%);
             width: 35px;
             height: 35px;
-    
+
             // @include media-breakpoint-down(sm) {
             //     display: none!important;
             // }
-            
+
             &:focus {
                 outline: 0;
             }
-    
+
             &:before {
                 content: '\e921';
                 font-family: 'icomoon';
@@ -168,23 +169,23 @@
                 transition: all .2s;
             }
         }
-    
+
         &-prev {
-          left: 0;
+            left: 0;
         }
-    
+
         &-next {
             right: 0;
-    
+
             &:before {
                 content: '\e911';
             }
         }
-    
+
         &-disabled {
             background-color: $white;
             border: 1px solid $grayish-red;
-    
+
             &:before {
                 color: $black;
             }
@@ -196,39 +197,64 @@
     .slick {
         &-arrow {
             border: 1px solid $grayish-red;
-            top: auto; 
+            top: auto;
             transform: none;
             bottom: 71px;
-            background-color: $white;
-    
+            background-color: transparent;
+            color: $white;
+
+            @include media-breakpoint-down(md) {
+                bottom: 23px;
+                margin: 0 .5rem;
+            }
+
+            @include media-breakpoint-down(sm) {
+                bottom: 8px;
+            }
+
             &:before {
                 content: '\e921';
                 font-family: 'icomoon';
                 @include font-size(0.875rem);
-                color: $black;
                 transition: all .2s;
             }
+
+            &:hover,
+            &:active {
+                background: $primary;
+            }
         }
-    
+
         &-prev {
-          left: 43px;
+            left: 43px;
+
+            @include media-breakpoint-down(md) {
+                left: auto;
+                right: 50%;
+            }
         }
-    
+
         &-next {
             right: auto;
             left: 97px;
-    
+
+            @include media-breakpoint-down(md) {
+                right: auto;
+                left: 50%;
+            }
+
             &:before {
                 content: '\e911';
             }
         }
-    
+
         &-disabled {
-            background-color: $white;
+            background-color: transparent;
             border: 1px solid $grayish-red;
-    
+            opacity: .5;
+
             &:before {
-                color: $black;
+                color: $white;
             }
         }
     }

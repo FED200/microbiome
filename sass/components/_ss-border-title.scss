@@ -1,0 +1,29 @@
+.border {
+
+    &-text {
+        color: $black;
+        position: relative;
+        font-weight: 600;
+        padding-left: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.25rem);
+            padding-left: 1.25rem;
+        }
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 8px;
+            background: transparent linear-gradient(165deg, rgba($dark-blue, 1) 0%, rgba($strong-cyan, 1) 100%);
+
+        }
+    }
+}
