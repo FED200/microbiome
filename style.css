@@ -13378,24 +13378,24 @@ textarea.form-control {
 }
 
 .section-title h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 1200px) {
   .section-title h2 {
-    font-size: calc(1.275rem + 0.3vw) ;
-  }
-}
-
-@media (min-width: 768px) {
-  .section-title h2 {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .section-title h2 {
     font-size: calc(1.325rem + 0.9vw) ;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-title h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .section-title h2 {
+    font-size: calc(1.375rem + 1.5vw) ;
   }
 }
 
@@ -13412,6 +13412,7 @@ textarea.form-control {
 }
 
 .section-title h2 span {
+  line-height: 32px;
   display: block;
   text-transform: uppercase;
   font-size: 1rem;
@@ -13750,7 +13751,7 @@ textarea.form-control {
 @media (min-width: 992px) {
   .accordion__title::before {
     right: 30px;
-    top: 26px;
+    top: 30px;
   }
 }
 
@@ -15084,6 +15085,12 @@ textarea.form-control {
 
 .team {
   background-color: #002c5d;
+}
+
+.faq-block__desc .h5 {
+  color: #002c5d;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .footer-item {

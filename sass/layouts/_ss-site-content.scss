@@ -151,3 +151,14 @@
 .team{
     background-color: $dark-blue;
 }
+
+// faq-block
+.faq-block {
+    &__desc {
+        .h5 {
+            color: $dark-blue;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+}
