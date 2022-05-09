@@ -23,4 +23,11 @@
             }
         }
     }
+
+    &__media{
+        display: inline-block;
+        img{
+            border-radius: 6px;
+        }
+    }
 }

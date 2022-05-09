@@ -14084,6 +14084,10 @@ textarea.form-control {
   }
 }
 
+.card-figure:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 @media (min-width: 992px) {
   .card-figure:hover {
     transform: scale(1.18);
@@ -14143,6 +14147,7 @@ textarea.form-control {
 .card-figure__content a {
   color: #fff;
   font-size: 0.875rem;
+  text-transform: capitalize;
   font-weight: 700;
   margin-top: 0.5rem;
   transition: all 0.3s;
@@ -14756,6 +14761,14 @@ textarea.form-control {
   text-decoration: none;
 }
 
+.two-col__media {
+  display: inline-block;
+}
+
+.two-col__media img {
+  border-radius: 6px;
+}
+
 .site-header {
   position: fixed;
   left: 0;
@@ -15067,6 +15080,10 @@ textarea.form-control {
   .services {
     margin-top: -2.5rem;
   }
+}
+
+.team {
+  background-color: #002c5d;
 }
 
 .footer-item {

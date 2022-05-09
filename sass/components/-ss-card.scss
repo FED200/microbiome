@@ -299,6 +299,7 @@
         }
 
         &:hover {
+            background-color: rgba($white, 0.20);
             @include media-breakpoint-up(lg) {
                 transform: scale(1.18);
                 transform-origin: bottom;
@@ -354,6 +355,7 @@
             a {
                 color: $white;
                 @include font-size(0.875rem);
+                text-transform: capitalize;
                 font-weight: 700;
                 margin-top: 0.5rem;
                 transition: all 0.3s;
