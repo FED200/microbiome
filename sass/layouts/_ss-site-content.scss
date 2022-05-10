@@ -192,3 +192,25 @@
         }
     }
 }
+
+// article feature 
+.article-feature {
+    border: 1px solid $strong-cyan;
+    border-radius: 5px;
+    transition: all .5s;
+
+    picture {
+        transition: all .3s ease-in-out;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &:hover {
+            box-shadow: 0 0 8px rgba(0, 44, 93, .5),
+                inset 0 0 8px rgba(2, 201, 184, .5);
+
+            picture {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

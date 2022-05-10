@@ -3,10 +3,10 @@
     text-transform: capitalize;
 
     h2 {
-        @include font-size(2rem);
+        @include font-size(1.75rem);
 
-        @include media-breakpoint-up(lg) {
-            @include font-size(2.5rem);
+        @include media-breakpoint-up(md) {
+            @include font-size(2rem);
         }
 
         @include media-breakpoint-up(xl) {
