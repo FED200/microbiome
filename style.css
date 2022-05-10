@@ -14467,6 +14467,11 @@ textarea.form-control {
   position: relative;
   display: block;
   min-height: 414px;
+  transition: all 0.3s;
+}
+
+.card-overlay:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .card-overlay:hover .card-overlay__text {
@@ -15128,6 +15133,16 @@ textarea.form-control {
 
 .gallery-media img {
   width: 100%;
+}
+
+.philosophy {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 992px) {
+  .philosophy .two-col__media {
+    margin-top: -7rem;
+  }
 }
 
 .footer-item {

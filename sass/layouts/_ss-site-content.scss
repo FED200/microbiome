@@ -165,9 +165,10 @@
 
 //gallery
 .gallery {
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
         display: none;
     }
+
     .row {
         [class*='col-'] {
             @include make-col(2.40);
@@ -177,6 +178,17 @@
     &-media {
         img {
             width: 100%;
+        }
+    }
+}
+
+//philosophy
+.philosophy {
+    background-color: $gray-200;
+
+    .two-col__media {
+        @include media-breakpoint-up(lg) {
+             margin-top: -7rem;
         }
     }
 }
