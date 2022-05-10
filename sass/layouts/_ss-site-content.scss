@@ -65,10 +65,10 @@
 
         h4 {
             @include font-size(1rem);
-            color:$white;
+            color: $white;
             font-weight: 400;
             margin-bottom: 1rem;
-            display:inline-block;
+            display: inline-block;
         }
 
         &-link {
@@ -141,14 +141,14 @@
 }
 
 //services
-.services{
-    @include media-breakpoint-down(sm){
+.services {
+    @include media-breakpoint-down(sm) {
         margin-top: -2.5rem;
     }
 }
 
 //team
-.team{
+.team {
     background-color: $dark-blue;
 }
 
@@ -159,6 +159,24 @@
             color: $dark-blue;
             font-weight: 600;
             text-transform: capitalize;
+        }
+    }
+}
+
+//gallery
+.gallery {
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+    .row {
+        [class*='col-'] {
+            @include make-col(2.40);
+        }
+    }
+
+    &-media {
+        img {
+            width: 100%;
         }
     }
 }

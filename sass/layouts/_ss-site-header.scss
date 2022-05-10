@@ -64,6 +64,30 @@
                 @include media-breakpoint-up(xl) {
                     padding-right: 1.5rem;
                 }
+
+                &.dropdown {
+                    transition: all 0.3s;                   
+
+                    .dropdown-menu {
+                        margin-top: 0;
+                        border-radius: 0;
+                        padding: 0;
+
+                        .dropdown-item {
+                            &:hover,
+                            &:focus{
+                                background-color: $strong-cyan;
+                            }
+                        }
+                    }
+
+                    &:focus,
+                    &:hover {
+                        .dropdown-menu {
+                            display: block
+                        }
+                    }
+                }
             }
 
             .nav-link {
@@ -74,7 +98,8 @@
                 color: $white;
                 transition: all 0.3s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     color: $red;
                 }
             }
