@@ -102,6 +102,17 @@
     }
 
     &-focus {
+
+        h2 {
+            color: $strong-cyan;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(lg) {
+                line-height: 32px;
+            }
+        }
+
         ul {
             padding-left: 0;
             margin-bottom: 0;
@@ -142,6 +153,26 @@
                         @include font-size(18px);
                         line-height: 32px;
 
+                    }
+                }
+            }
+        }
+    }
+
+    &--option {
+        padding: 1rem;
+
+        @include media-breakpoint-up(md) {
+            padding: 1.3rem 1.5rem;
+        }
+
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+
+                    @include media-breakpoint-up(xl) {
+                        margin-bottom: 1.25rem;
                     }
                 }
             }

@@ -108,3 +108,15 @@ ol {
 		z-index: -1;
 	}
 }
+
+.bg-gray {
+	background-color: #f6f6f6;
+}
+
+.gerd-symptoms {
+	max-width: 975px;
+
+	@include media-breakpoint-up(lg) {
+		line-height: 32px;
+	}
+}

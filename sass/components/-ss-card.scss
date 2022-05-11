@@ -300,6 +300,7 @@
 
         &:hover {
             background-color: rgba($white, 0.20);
+
             @include media-breakpoint-up(lg) {
                 transform: scale(1.18);
                 transform-origin: bottom;
@@ -406,6 +407,7 @@
 .post-widget {
     display: flex;
     align-items: center;
+    position: relative;
 
     &__media {
         display: inline-block;

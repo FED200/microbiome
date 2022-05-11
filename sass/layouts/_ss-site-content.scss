@@ -317,3 +317,20 @@
         max-width: 868px;
     }
 }
+
+//two-col 
+.two-col {
+    .block-left {
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 44.66667%;
+            max-width: 44.66667%;
+        }
+    }
+
+    .block-right {
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 44%;
+            max-width: 44%;
+        }
+    }
+}
