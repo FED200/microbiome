@@ -316,6 +316,81 @@
     &__info {
         max-width: 868px;
     }
+
+    .label-wrap {
+        background-color: rgba($strong-cyan, 0.20);
+        padding: 2rem 3rem;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        .social-links {
+            ul {
+                padding-left: 0;
+                margin-bottom: 0;
+
+                li {
+                    list-style-type: none;
+                    display: inline-block;
+                    margin: 0.3rem;
+
+                    a {
+                        width: 35px;
+                        height: 35px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: $dark-blue;
+                        color: $white;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $dark-blue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .form-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        color: $dark-blue;
+        font-weight: 500;
+        @include font-size(1.125rem);
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.25rem);
+            height: 50px;
+
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 60px;
+
+        }
+    }
+
+    form {
+
+        @include media-breakpoint-up(lg) {
+            padding: 2rem 3rem;
+
+        }
+
+
+        .form-group {
+            label {
+                color: $black;
+            }
+        }
+    }
 }
 
 
