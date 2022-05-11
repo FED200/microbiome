@@ -15256,6 +15256,14 @@ textarea.form-control {
   margin: 0 auto;
 }
 
+.condition-info strong {
+  color: #333333;
+}
+
+.contact-form__info {
+  max-width: 868px;
+}
+
 .footer-item {
   color: #666666;
   font-size: 1rem;

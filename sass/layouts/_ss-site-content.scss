@@ -304,5 +304,16 @@
     &-info{
         max-width: 1004px;
         margin: 0 auto;
+
+        strong{
+            color: $dark-gray-1;
+        }
+    }
+}
+
+//contact-form
+.contact-form{
+    &__info{
+        max-width: 868px;
     }
 }
