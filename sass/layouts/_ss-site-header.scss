@@ -74,6 +74,7 @@
                         padding: 0;
 
                         .dropdown-item {
+                            text-transform: capitalize;
                             &:hover,
                             &:focus{
                                 background-color: $strong-cyan;
@@ -100,7 +101,7 @@
 
                 &:hover,
                 &:focus {
-                    color: $red;
+                    color: $strong-cyan;
                 }
             }
         }

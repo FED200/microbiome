@@ -188,7 +188,7 @@
 
     .two-col__media {
         @include media-breakpoint-up(lg) {
-             margin-top: -7rem;
+            margin-top: -7rem;
         }
     }
 }
@@ -210,6 +210,90 @@
 
             picture {
                 transform: scale(1.02);
+            }
+        }
+    }
+}
+
+//our-team
+.our-team {
+    &__content {
+        max-width: 991px;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+}
+
+//timeline
+.timeline {
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            display: flex;
+        }
+    }
+
+    &-date {
+        color: $dark-blue;
+        @include font-size(1rem);
+        font-weight: 600;
+        margin-right: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.25rem);
+        }
+    }
+
+    &-desc {
+        @include font-size(0.9rem);
+        line-height: 32px;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.125rem);
+        }
+    }
+}
+
+//clininian
+.clinician {
+    &-media {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-up(lg) {
+            min-height: 450px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 521px;
+        }
+
+        a {
+            color: $dark-blue;
+            background-color: $white;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 90px;
+                height: 90px;
+                border: 1px solid rgba($white, 0.40);
+                border-radius: 50%;
             }
         }
     }
