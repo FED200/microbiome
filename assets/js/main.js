@@ -38,7 +38,10 @@ $(document).ready(function () {
       $(this).addClass('active').next('.accordion__body').slideDown();
     }
   });
-
+  //caret
+  $(".navbar-nav .caret").on("click", (function () {
+    $(this).next(".dropdown-menu").slideToggle()
+  }))
 
   /* smooth scroll*/
   $('a.js-has-smooth[href*="#"]:not([href="#"])').click(function () {
