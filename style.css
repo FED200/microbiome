@@ -15251,6 +15251,11 @@ textarea.form-control {
   border-radius: 50%;
 }
 
+.condition-info {
+  max-width: 1004px;
+  margin: 0 auto;
+}
+
 .footer-item {
   color: #666666;
   font-size: 1rem;
