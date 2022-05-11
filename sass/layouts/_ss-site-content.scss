@@ -300,37 +300,75 @@
 }
 
 //condition
-.condition{
-    &-info{
+.condition {
+    &-info {
         max-width: 1004px;
         margin: 0 auto;
 
-        strong{
+        strong {
             color: $dark-gray-1;
         }
     }
 }
 
 //contact-form
-.contact-form{
-    &__info{
+.contact-form {
+    &__info {
         max-width: 868px;
     }
 }
 
-//two-col 
-.two-col {
-    .block-left {
+
+.block {
+    &-details {
+        padding: 1rem;
+
+        @include media-breakpoint-up(md) {
+            padding: 1.3rem 1.5rem;
+        }
+
         @include media-breakpoint-up(xxl) {
-            flex: 0 0 44.66667%;
-            max-width: 44.66667%;
+            padding: 3rem 2rem;
+        }
+
+        ul {
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                list-style-type: none;
+            }
         }
     }
 
-    .block-right {
-        @include media-breakpoint-up(xxl) {
-            flex: 0 0 44%;
-            max-width: 44%;
+    &-title {
+        color: #333333;
+        @include font-size(1rem);
+        font-weight: 600;
+        padding-right: 1rem;
+        flex-basis: 200px;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.125rem);
+            padding-right: 2rem;
         }
+    }
+
+    &-desc {
+        @include font-size(0.9rem);
+        line-height: 32px;
+        max-width: 815px;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.125rem);
+        }
+    }
+}
+
+.condition-block {
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 1140px;
     }
 }

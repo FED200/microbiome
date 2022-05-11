@@ -12223,6 +12223,24 @@ ol {
   z-index: -1;
 }
 
+.bg-gray {
+  background-color: #f6f6f6;
+}
+
+.gerd-symptoms {
+  max-width: 975px;
+}
+
+@media (min-width: 992px) {
+  .gerd-symptoms {
+    line-height: 32px;
+  }
+}
+
+.gerd-details__desc {
+  max-width: 914px;
+}
+
 body {
   min-width: 320px;
   overflow-x: hidden;
@@ -13104,6 +13122,10 @@ textarea.form-control {
   }
 }
 
+.banner-inner--mw {
+  max-width: 1200px;
+}
+
 .banner-inner .breadcrumb {
   background-color: transparent;
   padding: 0;
@@ -13624,6 +13646,18 @@ textarea.form-control {
   border: 2px solid #333333;
 }
 
+.list-focus h2 {
+  color: #02c9b8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .list-focus h2 {
+    line-height: 32px;
+  }
+}
+
 .list-focus ul {
   padding-left: 0;
   margin-bottom: 0;
@@ -13667,6 +13701,26 @@ textarea.form-control {
   .list-focus ul li span {
     font-size: 1.125rem;
     line-height: 32px;
+  }
+}
+
+.list--option {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .list--option {
+    padding: 1.3rem 1.5rem;
+  }
+}
+
+.list--option ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .list--option ul li:not(:last-child) {
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -14200,6 +14254,7 @@ textarea.form-control {
 .post-widget {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .post-widget__media {
@@ -15262,6 +15317,65 @@ textarea.form-control {
 
 .contact-form__info {
   max-width: 868px;
+}
+
+.block-details {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .block-details {
+    padding: 1.3rem 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .block-details {
+    padding: 3rem 2rem;
+  }
+}
+
+.block-details ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.block-details ul li {
+  display: flex;
+  list-style-type: none;
+}
+
+.block-title {
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 1rem;
+  flex-basis: 200px;
+}
+
+@media (min-width: 992px) {
+  .block-title {
+    font-size: 1.125rem;
+    padding-right: 2rem;
+  }
+}
+
+.block-desc {
+  font-size: 0.9rem;
+  line-height: 32px;
+  max-width: 815px;
+}
+
+@media (min-width: 992px) {
+  .block-desc {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .condition-block {
+    max-width: 1140px;
+  }
 }
 
 .footer-item {
